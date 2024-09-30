@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqe77lgeec81a"]
+
+[ext_resource type="Texture2D" uid="uid://ctx4tj52u0886" path="res://assets/PNG/Sprites/Ships/spaceShips_008.png" id="1_ao6do"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_t6sds"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i420g"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebb86"]
+
+[node name="Root" type="Node2D"]
+position = Vector2(318, 271)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_t6sds")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(2, 4)
+texture = ExtResource("1_ao6do")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_i420g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_ebb86")
