@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://du4u0f7qb3vo5"]
+
+[ext_resource type="Texture2D" uid="uid://30k526b5ey70" path="res://assets/PNG/Sprites/Astronauts/spaceAstronauts_013.png" id="1_bfclb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5si3y"]
+
+[node name="Enemy" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_bfclb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+scale = Vector2(1.28048, 1.28048)
+shape = SubResource("CircleShape2D_5si3y")
