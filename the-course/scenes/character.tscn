@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://by7mj2px3i8wc"]
+
+[ext_resource type="Script" path="res://main_character.gd" id="1_b41w1"]
+[ext_resource type="Texture2D" uid="uid://v4ts3by1d30w" path="res://assets/PNG/Sprites/Astronauts/spaceAstronauts_006.png" id="2_xbtji"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0sqix"]
+
+[node name="Character" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_b41w1")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_xbtji")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-7, 0)
+scale = Vector2(1.34175, 1.34175)
+shape = SubResource("CircleShape2D_0sqix")
+
+[node name="bullet_spawn_point" type="Marker2D" parent="CharacterBody2D"]
+position = Vector2(42, 10)
