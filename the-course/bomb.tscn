@@ -1,19 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://wk5jgsobmh3w"]
 
 [ext_resource type="Script" path="res://bomb.gd" id="1_kpyau"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_g4ufw"]
-size = Vector2(10, 40)
+[ext_resource type="Texture2D" uid="uid://bhttwfs72aafs" path="res://download.jpg" id="2_vajf4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f4qkr"]
-size = Vector2(14, 32)
+size = Vector2(12, 32)
 
 [node name="bomb" type="Area2D" groups=["bomb"]]
 position = Vector2(258, 404)
 script = ExtResource("1_kpyau")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("PlaceholderTexture2D_g4ufw")
+position = Vector2(-0.249994, 1.00001)
+scale = Vector2(0.0484495, 0.102564)
+texture = ExtResource("2_vajf4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_f4qkr")

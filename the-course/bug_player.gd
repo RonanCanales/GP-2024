@@ -6,7 +6,7 @@ extends CharacterBody2D
 
 @onready var laser:Node2D=$laser
 
-@onready var bug = $"../bug"
+@onready var bug: Area2D = $"../bug"
 
 var can_move = true
 

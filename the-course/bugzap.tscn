@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://betoa56tlk8tg"]
+[gd_scene load_steps=11 format=3 uid="uid://betoa56tlk8tg"]
 
 [ext_resource type="Script" path="res://bugzap.gd" id="1_s2q5l"]
 [ext_resource type="Script" path="res://bug_player.gd" id="1_vqb0a"]
 [ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="2_rwge8"]
 [ext_resource type="PackedScene" uid="uid://b26mblvmunn4a" path="res://bug.tscn" id="4_k6dp0"]
+[ext_resource type="Texture2D" uid="uid://bhttwfs72aafs" path="res://download.jpg" id="4_or8q2"]
 [ext_resource type="Theme" uid="uid://dyroetfulq0o6" path="res://bryans_theme.tres" id="8_12hsc"]
 [ext_resource type="Script" path="res://bug_spawner.gd" id="9_oaua2"]
 
@@ -39,7 +40,7 @@ polygon = PackedVector2Array(-25, -10, -5, -10, -5, -39, 5, -39, 5, -10, 25, -10
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="player/player"]
 position = Vector2(-0.767742, -1.38388)
 scale = Vector2(0.983871, 0.976974)
-polygon = PackedVector2Array(-28, 10, -29, -12, -9, -16, -9, -43, 13, -43, 11, -16, 33, -14, 31, 14)
+polygon = PackedVector2Array(-28, 10, -29, -12, -8.36722, -15.9842, -9, -43, 13, -43, 11, -16, 33, -14, 31, 14)
 
 [node name="laser" type="Line2D" parent="player"]
 position = Vector2(0, -50)
@@ -48,6 +49,11 @@ width = 5.0
 
 [node name="laser_area" type="Area2D" parent="player/laser"]
 monitoring = false
+
+[node name="Sprite2D" type="Sprite2D" parent="player/laser/laser_area"]
+position = Vector2(1.99997, -310.5)
+scale = Vector2(0.0620154, 1.99038)
+texture = ExtResource("4_or8q2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player/laser/laser_area"]
 position = Vector2(2, -311)

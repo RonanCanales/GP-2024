@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://r5gpvyus7nrn"]
+[gd_scene load_steps=3 format=3 uid="uid://r5gpvyus7nrn"]
 
 [ext_resource type="Script" path="res://if_statement.gd" id="1_8w2qs"]
+[ext_resource type="Texture2D" uid="uid://bhttwfs72aafs" path="res://download.jpg" id="2_1o1xr"]
 
 [node name="if_statement" type="Node2D"]
 script = ExtResource("1_8w2qs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1o1xr")
