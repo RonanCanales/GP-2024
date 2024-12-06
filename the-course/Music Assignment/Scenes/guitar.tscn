@@ -1,19 +1,53 @@
-[gd_scene load_steps=2 format=3 uid="uid://cct02nd8tdeg3"]
+[gd_scene load_steps=3 format=3 uid="uid://cct02nd8tdeg3"]
 
 [ext_resource type="Script" path="res://Music Assignment/Scenes/guitar.gd" id="1_wnhl5"]
+[ext_resource type="Texture2D" uid="uid://dk2ajyqoeqdy4" path="res://Music Assignment/Asset/44-443668_guitar-headstock-and-fretboard-hd-png-download.png" id="2_8yok4"]
 
 [node name="Guitar" type="Node2D"]
 script = ExtResource("1_wnhl5")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-offset_right = 478.0
+[node name="Strings" type="PanelContainer" parent="."]
+offset_left = -2.0
+offset_right = 476.0
 offset_bottom = 215.0
 
-[node name="GridContainer" type="GridContainer" parent="PanelContainer"]
+[node name="GridContainer" type="GridContainer" parent="Strings"]
 layout_mode = 2
 
-[node name="Button_LowE" type="Button" parent="PanelContainer/GridContainer"]
+[node name="Button_LowE" type="Button" parent="Strings/GridContainer"]
 layout_mode = 2
-text = "Low E"
+text = "Low E "
 
-[connection signal="pressed" from="PanelContainer/GridContainer/Button_LowE" to="." method="_on_button_low_e_pressed"]
+[node name="Button_A" type="Button" parent="Strings/GridContainer"]
+layout_mode = 2
+text = "A "
+
+[node name="Button_D" type="Button" parent="Strings/GridContainer"]
+layout_mode = 2
+text = "D"
+
+[node name="Button_G" type="Button" parent="Strings/GridContainer"]
+layout_mode = 2
+text = "G"
+
+[node name="Button_B" type="Button" parent="Strings/GridContainer"]
+layout_mode = 2
+text = "B "
+
+[node name="Button_HighE" type="Button" parent="Strings/GridContainer"]
+layout_mode = 2
+text = "High E"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(627, 301)
+scale = Vector2(2.36431, 2.1542)
+texture = ExtResource("2_8yok4")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+
+[connection signal="pressed" from="Strings/GridContainer/Button_LowE" to="." method="_on_button_low_e_pressed"]
+[connection signal="pressed" from="Strings/GridContainer/Button_A" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Strings/GridContainer/Button_D" to="." method="_on_button_d_pressed"]
+[connection signal="pressed" from="Strings/GridContainer/Button_G" to="." method="_on_button_g_pressed"]
+[connection signal="pressed" from="Strings/GridContainer/Button_B" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Strings/GridContainer/Button_HighE" to="." method="_on_button_high_e_pressed"]
