@@ -65,6 +65,7 @@ layout_mode = 2
 text = "jhjhjh"
 
 [node name="sequencer" type="Node2D" parent="."]
+position = Vector2(0, -2)
 script = ExtResource("2_f7sqc")
 pad_scene = ExtResource("3_e7xm4")
 note_scene = ExtResource("4_i4a6q")

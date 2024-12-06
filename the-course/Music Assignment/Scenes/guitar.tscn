@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://cct02nd8tdeg3"]
+[gd_scene load_steps=2 format=3 uid="uid://cct02nd8tdeg3"]
+
+[ext_resource type="Script" path="res://Music Assignment/Scenes/guitar.gd" id="1_wnhl5"]
 
 [node name="Guitar" type="Node2D"]
+script = ExtResource("1_wnhl5")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 478.0
+offset_bottom = 215.0
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Button_LowE" type="Button" parent="PanelContainer/GridContainer"]
+layout_mode = 2
+text = "Low E"
+
+[connection signal="pressed" from="PanelContainer/GridContainer/Button_LowE" to="." method="_on_button_low_e_pressed"]
