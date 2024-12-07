@@ -56,21 +56,77 @@ texture = ExtResource("2_8oc7y")
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
 zoom = Vector2(2.445, 2.445)
 
+[node name="ReverbSlider" type="HSlider" parent="."]
+offset_left = 724.0
+offset_top = 329.0
+offset_right = 824.0
+offset_bottom = 345.0
+step = 0.1
+
+[node name="ReverbLabel" type="Label" parent="ReverbSlider"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 11.0
+offset_right = 89.53
+offset_bottom = 60.0
+scale = Vector2(0.66, 0.66)
+text = "Reverb
+
+"
+
+[node name="DistortionSlider" type="HSlider" parent="."]
+offset_left = 723.0
+offset_top = 356.0
+offset_right = 823.0
+offset_bottom = 372.0
+step = 0.1
+
+[node name="DistortionLabel" type="Label" parent="DistortionSlider"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 9.0
+offset_right = 109.0
+offset_bottom = 84.0
+scale = Vector2(0.66, 0.66)
+text = "Distortion
+
+
+"
+
+[node name="ChorusSlider" type="HSlider" parent="."]
+offset_left = 721.0
+offset_top = 381.0
+offset_right = 821.0
+offset_bottom = 397.0
+step = 0.1
+
+[node name="ChorusLabel" type="Label" parent="ChorusSlider"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 10.0
+offset_right = 92.53
+offset_bottom = 85.0
+scale = Vector2(0.66, 0.66)
+text = "Chorus
+
+
+"
+
 [node name="VolumeSlider" type="HSlider" parent="."]
 offset_left = 723.0
 offset_top = 305.0
-offset_right = 822.87
+offset_right = 823.0
 offset_bottom = 321.0
 max_value = 3.0
 step = 0.1
 value = 1.0
 
-[node name="Volume" type="Label" parent="VolumeSlider"]
+[node name="VolumeLabel" type="Label" parent="VolumeSlider"]
 layout_mode = 0
 offset_left = 31.0
-offset_top = 12.0
+offset_top = 11.0
 offset_right = 90.53
-offset_bottom = 35.0
+offset_bottom = 34.0
 scale = Vector2(0.66, 0.66)
 text = "Volume
 "

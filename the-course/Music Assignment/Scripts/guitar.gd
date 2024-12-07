@@ -1,4 +1,5 @@
 extends Node2D
+
 #Guitar Strings
 var low_e_sound = preload("res://Music Assignment/Strings sounds/acoustic-guitar-string-e-note-low.wav")
 var a_string_sound = preload("res://Music Assignment/Strings sounds/acoustic-guitar-string-a-note-straight.wav")
@@ -9,6 +10,10 @@ var high_e_sound = preload("res://Music Assignment/Strings sounds/acoustic-guita
 
 
 @onready var volume_slider: HSlider = $VolumeSlider
+@onready var reverb_slider: HSlider = $ReverbSlider
+@onready var distortion_slider: HSlider = $DistortionSlider
+@onready var chorus_slider: HSlider = $ChorusSlider
+
 
 #Guitar Chords
 var c_major = preload("res://Music Assignment/Chord  sounds/17569__danglada__c-major-[AudioTrimmer.com].wav")
@@ -18,13 +23,17 @@ var d_major = preload("res://Music Assignment/Chord  sounds/17570__danglada__d-m
 var a_major = preload("res://Music Assignment/Chord  sounds/17567__danglada__a-major-[AudioTrimmer.com].wav")
 var b_major = preload("res://Music Assignment/Chord  sounds/17568__danglada__b-major-[AudioTrimmer.com].wav")
 
+var reverb_effect = AudioEffectReverb.new()
+var distortion_effect = AudioEffectDistortion.new()
+var chorus_effect = AudioEffectChorus.new()
 
+
+#STRINGS
 func _on_button_low_e_pressed() -> void:
 	play_sound(low_e_sound, volume_slider.value)
 
 func _on_button_a_pressed() -> void:
 	play_sound(a_string_sound, volume_slider.value)
-
 
 func _on_button_d_pressed() -> void:
 	play_sound(d_string_sound, volume_slider.value)
@@ -39,14 +48,12 @@ func _on_button_high_e_pressed() -> void:
 	play_sound(high_e_sound, volume_slider.value)
 
 
-func play_sound(sound: AudioStream, volume: float):
-	var audio_player = AudioStreamPlayer.new()
-	add_child(audio_player)
-	audio_player.stream = sound
-	audio_player.volume_db = linear_to_db(volume)
-	audio_player.play()
 
 
+
+
+
+#CHORDS
 func _on_button_c_chord_pressed() -> void:
 	play_sound(c_major, volume_slider.value)
 
@@ -68,3 +75,11 @@ func _on_button_a_major_pressed() -> void:
 
 func _on_button_b_major_pressed() -> void:
 	play_sound(b_major, volume_slider.value)
+
+
+func play_sound(sound: AudioStream, volume: float):
+	var audio_player = AudioStreamPlayer.new()
+	add_child(audio_player)
+	audio_player.stream = sound
+	audio_player.volume_db = linear_to_db(volume)
+	audio_player.play()
