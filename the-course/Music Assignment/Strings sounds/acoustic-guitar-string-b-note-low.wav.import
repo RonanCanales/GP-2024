@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://88alu7e8jdpi"
+path="res://.godot/imported/acoustic-guitar-string-b-note-low.wav-c2c4aa30d5ad873af68b28963324ef62.sample"
+
+[deps]
+
+source_file="res://Music Assignment/Strings sounds/acoustic-guitar-string-b-note-low.wav"
+dest_files=["res://.godot/imported/acoustic-guitar-string-b-note-low.wav-c2c4aa30d5ad873af68b28963324ef62.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

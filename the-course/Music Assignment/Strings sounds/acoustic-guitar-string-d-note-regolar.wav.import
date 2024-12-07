@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ce6oq688xyvg6"
+path="res://.godot/imported/acoustic-guitar-string-d-note-regolar.wav-1014dea1f6a4f2f83ee0f6b5a502815c.sample"
+
+[deps]
+
+source_file="res://Music Assignment/Strings sounds/acoustic-guitar-string-d-note-regolar.wav"
+dest_files=["res://.godot/imported/acoustic-guitar-string-d-note-regolar.wav-1014dea1f6a4f2f83ee0f6b5a502815c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

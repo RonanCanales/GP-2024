@@ -1,15 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://cct02nd8tdeg3"]
 
-[ext_resource type="Script" path="res://Music Assignment/Scenes/guitar.gd" id="1_wnhl5"]
-[ext_resource type="Texture2D" uid="uid://dk2ajyqoeqdy4" path="res://Music Assignment/Asset/44-443668_guitar-headstock-and-fretboard-hd-png-download.png" id="2_8yok4"]
+[ext_resource type="Script" path="res://Music Assignment/Scripts/guitar.gd" id="1_wnhl5"]
+[ext_resource type="Texture2D" uid="uid://c6rd4n2tvlgu1" path="res://Music Assignment/Asset/s-l1600.png" id="2_8oc7y"]
 
 [node name="Guitar" type="Node2D"]
 script = ExtResource("1_wnhl5")
 
 [node name="Strings" type="PanelContainer" parent="."]
-offset_left = -2.0
-offset_right = 476.0
-offset_bottom = 215.0
+z_index = 1
+offset_left = 460.0
+offset_top = 174.0
+offset_right = 517.0
+offset_bottom = 389.0
+scale = Vector2(0.46613, 0.46613)
 
 [node name="GridContainer" type="GridContainer" parent="Strings"]
 layout_mode = 2
@@ -38,12 +41,54 @@ text = "B "
 layout_mode = 2
 text = "High E"
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 176.0
+offset_right = 879.0
+offset_bottom = 216.0
+columns = 2
+
+[node name="Button_C major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "C chord"
+
+[node name="Button_G major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "G chord"
+
+[node name="Button_F major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "F chord"
+
+[node name="Button_D major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "D chord"
+
+[node name="Button_A major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "A chord"
+
+[node name="Button_B major" type="Button" parent="Control/GridContainer"]
+layout_mode = 2
+text = "B  major"
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(627, 301)
-scale = Vector2(2.36431, 2.1542)
-texture = ExtResource("2_8yok4")
+position = Vector2(606, 306)
+scale = Vector2(0.430237, 0.435484)
+texture = ExtResource("2_8oc7y")
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(2.445, 2.445)
 
 [connection signal="pressed" from="Strings/GridContainer/Button_LowE" to="." method="_on_button_low_e_pressed"]
 [connection signal="pressed" from="Strings/GridContainer/Button_A" to="." method="_on_button_a_pressed"]
@@ -51,3 +96,9 @@ texture = ExtResource("2_8yok4")
 [connection signal="pressed" from="Strings/GridContainer/Button_G" to="." method="_on_button_g_pressed"]
 [connection signal="pressed" from="Strings/GridContainer/Button_B" to="." method="_on_button_b_pressed"]
 [connection signal="pressed" from="Strings/GridContainer/Button_HighE" to="." method="_on_button_high_e_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_C major" to="." method="_on_button_c_chord_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_G major" to="." method="_on_button_g_major_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_F major" to="." method="_on_button_f_major_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_D major" to="." method="_on_button_d_major_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_A major" to="." method="_on_button_a_major_pressed"]
+[connection signal="pressed" from="Control/GridContainer/Button_B major" to="." method="_on_button_b_major_pressed"]

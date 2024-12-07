@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://mw4yt0au3e5u"
+path="res://.godot/imported/17568__danglada__b-major-[AudioTrimmer.com].wav-7668951fcc66774377e2264113b27c57.sample"
+
+[deps]
+
+source_file="res://Music Assignment/Chord  sounds/17568__danglada__b-major-[AudioTrimmer.com].wav"
+dest_files=["res://.godot/imported/17568__danglada__b-major-[AudioTrimmer.com].wav-7668951fcc66774377e2264113b27c57.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://v4rj78ouylrj"
+path="res://.godot/imported/acoustic-guitar-string-g-note-clean.wav-3937978fe4fe6a539b8a77245b3501da.sample"
+
+[deps]
+
+source_file="res://Music Assignment/Strings sounds/acoustic-guitar-string-g-note-clean.wav"
+dest_files=["res://.godot/imported/acoustic-guitar-string-g-note-clean.wav-3937978fe4fe6a539b8a77245b3501da.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
