@@ -6,41 +6,6 @@
 [node name="Guitar" type="Node2D"]
 script = ExtResource("1_wnhl5")
 
-[node name="Strings" type="PanelContainer" parent="."]
-z_index = 1
-offset_left = 460.0
-offset_top = 174.0
-offset_right = 517.0
-offset_bottom = 389.0
-scale = Vector2(0.46613, 0.46613)
-
-[node name="GridContainer" type="GridContainer" parent="Strings"]
-layout_mode = 2
-
-[node name="Button_LowE" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "Low E "
-
-[node name="Button_A" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "A "
-
-[node name="Button_D" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "D"
-
-[node name="Button_G" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "G"
-
-[node name="Button_B" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "B "
-
-[node name="Button_HighE" type="Button" parent="Strings/GridContainer"]
-layout_mode = 2
-text = "High E"
-
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 1
@@ -51,6 +16,7 @@ offset_bottom = 40.0
 grow_horizontal = 0
 
 [node name="GridContainer" type="GridContainer" parent="Control"]
+z_index = 1
 layout_mode = 0
 offset_left = 738.0
 offset_top = 176.0
@@ -90,15 +56,117 @@ texture = ExtResource("2_8oc7y")
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
 zoom = Vector2(2.445, 2.445)
 
-[connection signal="pressed" from="Strings/GridContainer/Button_LowE" to="." method="_on_button_low_e_pressed"]
-[connection signal="pressed" from="Strings/GridContainer/Button_A" to="." method="_on_button_a_pressed"]
-[connection signal="pressed" from="Strings/GridContainer/Button_D" to="." method="_on_button_d_pressed"]
-[connection signal="pressed" from="Strings/GridContainer/Button_G" to="." method="_on_button_g_pressed"]
-[connection signal="pressed" from="Strings/GridContainer/Button_B" to="." method="_on_button_b_pressed"]
-[connection signal="pressed" from="Strings/GridContainer/Button_HighE" to="." method="_on_button_high_e_pressed"]
+[node name="VolumeSlider" type="HSlider" parent="."]
+offset_left = 723.0
+offset_top = 305.0
+offset_right = 822.87
+offset_bottom = 321.0
+max_value = 3.0
+step = 0.1
+value = 1.0
+
+[node name="Volume" type="Label" parent="VolumeSlider"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 12.0
+offset_right = 90.53
+offset_bottom = 35.0
+scale = Vector2(0.66, 0.66)
+text = "Volume
+"
+
+[node name="LowE String" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 3.835
+offset_bottom = 3.835
+
+[node name="Button_LowE" type="Button" parent="LowE String"]
+layout_mode = 2
+offset_left = 572.0
+offset_top = 330.0
+offset_right = 699.0
+offset_bottom = 338.0
+rotation = -1.54811
+
+[node name="A string" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_A" type="Button" parent="A string"]
+layout_mode = 2
+offset_left = 584.0
+offset_top = 335.0
+offset_right = 712.0
+offset_bottom = 343.0
+rotation = -1.56207
+
+[node name="D string" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_D" type="Button" parent="D string"]
+layout_mode = 2
+offset_left = 596.0
+offset_top = 335.0
+offset_right = 724.0
+offset_bottom = 343.0
+rotation = -1.57254
+
+[node name="G string" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_G" type="Button" parent="G string"]
+offset_left = 607.0
+offset_top = 334.0
+offset_right = 734.0
+offset_bottom = 342.0
+rotation = -1.58127
+
+[node name="B string" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_B" type="Button" parent="B string"]
+layout_mode = 2
+offset_left = 618.0
+offset_top = 333.0
+offset_right = 743.0
+offset_bottom = 341.0
+rotation = -1.58825
+
+[node name="HighE string" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button_HighE" type="Button" parent="HighE string"]
+layout_mode = 2
+offset_left = 629.0
+offset_top = 332.0
+offset_right = 753.0
+offset_bottom = 340.0
+rotation = -1.59174
+
 [connection signal="pressed" from="Control/GridContainer/Button_C major" to="." method="_on_button_c_chord_pressed"]
 [connection signal="pressed" from="Control/GridContainer/Button_G major" to="." method="_on_button_g_major_pressed"]
 [connection signal="pressed" from="Control/GridContainer/Button_F major" to="." method="_on_button_f_major_pressed"]
 [connection signal="pressed" from="Control/GridContainer/Button_D major" to="." method="_on_button_d_major_pressed"]
 [connection signal="pressed" from="Control/GridContainer/Button_A major" to="." method="_on_button_a_major_pressed"]
 [connection signal="pressed" from="Control/GridContainer/Button_B major" to="." method="_on_button_b_major_pressed"]
+[connection signal="pressed" from="LowE String/Button_LowE" to="." method="_on_button_low_e_pressed"]
+[connection signal="pressed" from="A string/Button_A" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="D string/Button_D" to="." method="_on_button_d_pressed"]
+[connection signal="pressed" from="G string/Button_G" to="." method="_on_button_g_pressed"]
+[connection signal="pressed" from="B string/Button_B" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="HighE string/Button_HighE" to="." method="_on_button_high_e_pressed"]
