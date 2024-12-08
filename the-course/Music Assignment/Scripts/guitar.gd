@@ -7,7 +7,7 @@ var d_string_sound = preload("res://Music Assignment/Strings sounds/acoustic-gui
 var g_string_sound = preload("res://Music Assignment/Strings sounds/acoustic-guitar-string-g-note-clean-low.wav")
 var b_string_sound = preload("res://Music Assignment/Strings sounds/acoustic-guitar-string-b-note-low.wav")
 var high_e_sound = preload("res://Music Assignment/Strings sounds/acoustic-guitar-string-e-note-high.wav")
-
+var FEIN_X_NOKIA = preload("res://Music Assignment/Chord  sounds/fein-x-nokia.mp3")
 
 @onready var volume_slider: HSlider = $VolumeSlider
 @onready var reverb_slider: HSlider = $ReverbSlider
@@ -83,3 +83,15 @@ func play_sound(sound: AudioStream, volume: float):
 	audio_player.stream = sound
 	audio_player.volume_db = linear_to_db(volume)
 	audio_player.play()
+
+
+
+func _on_button_pressed() -> void:
+	if $AudioStreamPlayer2D.playing:
+		$Button.text = "Oh yeah"
+		$AudioStreamPlayer2D.stop()
+	else:
+		$AudioStreamPlayer2D.stream = FEIN_X_NOKIA
+		$AudioStreamPlayer2D.volume_db = linear_to_db(volume_slider.value)
+		$Button.text = "Stop"
+		$AudioStreamPlayer2D.play()

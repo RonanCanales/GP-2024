@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceqni6mv2foi4"
+path="res://.godot/imported/fein-x-nokia.mp3-6b08fec083ce18d9eba849e6d605f5f2.mp3str"
+
+[deps]
+
+source_file="res://Music Assignment/Chord  sounds/fein-x-nokia.mp3"
+dest_files=["res://.godot/imported/fein-x-nokia.mp3-6b08fec083ce18d9eba849e6d605f5f2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
