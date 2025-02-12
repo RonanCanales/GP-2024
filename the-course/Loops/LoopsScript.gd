@@ -5,6 +5,11 @@ extends Node
 func _ready() -> void:
 	for i in range (1, 11):
 		print (i)
+
+	var i = 10
+	while i > 0:
+		print(i)
+		i -= 1
 	pass # Replace with function body.
 
 
