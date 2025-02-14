@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbsfd8yiheuf"]
+
+[ext_resource type="Script" path="res://Flower/flowers.gd" id="1_5usrq"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(13, -2)
+
+[node name="Flowers" type="Node2D" parent="."]
+position = Vector2(521, 362)
+script = ExtResource("1_5usrq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 1.0
+offset_right = 102.0
+offset_bottom = 24.0
+scale = Vector2(0.45374, 0.45374)
+text = "Num Lines:"
+
+[node name="num_lines" type="HSlider" parent="."]
+offset_left = 68.0
+offset_top = 1.0
+offset_right = 568.0
+offset_bottom = 18.0
+scale = Vector2(0.676938, 0.615705)
+max_value = 1000.0
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 19.0
+offset_right = 68.0
+offset_bottom = 42.0
+scale = Vector2(0.574035, 0.574035)
+text = "Radius"
+
+[node name="radius" type="HSlider" parent="."]
+offset_left = 68.0
+offset_top = 18.0
+offset_right = 568.0
+offset_bottom = 34.0
+scale = Vector2(0.675915, 0.589045)
+max_value = 1000.0
+
+[connection signal="value_changed" from="num_lines" to="Flowers" method="_on_num_lines_value_changed"]
+[connection signal="value_changed" from="radius" to="Flowers" method="_on_radius_value_changed"]
