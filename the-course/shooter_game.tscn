@@ -16,7 +16,7 @@ script = ExtResource("1_c5ar1")
 position = Vector2(232, 59)
 
 [node name="Timer" parent="ufo3" index="1"]
-wait_time = 9.11597
+wait_time = 2.47548
 
 [node name="dude" type="CharacterBody2D" parent="." node_paths=PackedStringArray("bullet_spawn")]
 collision_mask = 6
@@ -50,13 +50,13 @@ position_smoothing_enabled = true
 position = Vector2(-346, 128)
 
 [node name="Timer" parent="ufo" index="1"]
-wait_time = 8.96697
+wait_time = 8.12282
 
 [node name="ufo2" parent="." instance=ExtResource("3_6xsbg")]
 position = Vector2(402, 68)
 
 [node name="Timer" parent="ufo2" index="1"]
-wait_time = 8.86255
+wait_time = 7.44153
 
 [node name="ufo_spawner" type="Marker2D" parent="."]
 script = ExtResource("4_gm47b")
