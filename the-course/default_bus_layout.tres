@@ -1,4 +1,4 @@
-[gd_resource type="AudioBusLayout" load_steps=6 format=3 uid="uid://d0tiv0n6oek2y"]
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://d0tiv0n6oek2y"]
 
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_jagyb"]
 resource_name = "Reverb"
@@ -6,42 +6,9 @@ resource_name = "Reverb"
 [sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_7bspv"]
 resource_name = "PitchShift"
 
-[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_5pnia"]
-resource_name = "Reverb"
-
-[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_f550t"]
-resource_name = "Distortion"
-
-[sub_resource type="AudioEffectChorus" id="AudioEffectChorus_01sdp"]
-resource_name = "Chorus"
-
 [resource]
 bus/0/volume_db = 6.02
 bus/0/effect/0/effect = SubResource("AudioEffectReverb_jagyb")
 bus/0/effect/0/enabled = false
 bus/0/effect/1/effect = SubResource("AudioEffectPitchShift_7bspv")
 bus/0/effect/1/enabled = false
-bus/1/name = &"AudioEffectReverb"
-bus/1/solo = false
-bus/1/mute = false
-bus/1/bypass_fx = false
-bus/1/volume_db = 0.0
-bus/1/send = &"Master"
-bus/1/effect/0/effect = SubResource("AudioEffectReverb_5pnia")
-bus/1/effect/0/enabled = true
-bus/2/name = &"AudioEffectDistortion"
-bus/2/solo = false
-bus/2/mute = false
-bus/2/bypass_fx = false
-bus/2/volume_db = 0.0
-bus/2/send = &"Master"
-bus/2/effect/0/effect = SubResource("AudioEffectDistortion_f550t")
-bus/2/effect/0/enabled = true
-bus/3/name = &"AudioEffectChorus"
-bus/3/solo = false
-bus/3/mute = false
-bus/3/bypass_fx = false
-bus/3/volume_db = 0.0
-bus/3/send = &"Master"
-bus/3/effect/0/effect = SubResource("AudioEffectChorus_01sdp")
-bus/3/effect/0/enabled = true
