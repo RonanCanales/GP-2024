@@ -1,86 +1,98 @@
-[gd_scene load_steps=7 format=3 uid="uid://5xmg4kyjea30"]
+[gd_scene load_steps=9 format=3 uid="uid://5xmg4kyjea30"]
 
-[ext_resource type="Script" path="res://shooter_game.gd" id="1_c5ar1"]
-[ext_resource type="Script" path="res://dude.gd" id="1_opyg7"]
-[ext_resource type="PackedScene" uid="uid://dl7bn3bgrqbcg" path="res://dude_bullet.tscn" id="2_mugk0"]
+[ext_resource type="Script" uid="uid://byl3sew3vbcr5" path="res://shooter_game.gd" id="1_c5ar1"]
+[ext_resource type="AudioStream" uid="uid://boy36rslfnhmp" path="res://sounds/heroplanet.mp3" id="2_ejtda"]
+[ext_resource type="PackedScene" uid="uid://dogoya3fntpbk" path="res://dude.tscn" id="2_gm47b"]
 [ext_resource type="PackedScene" uid="uid://7ffshnxf3qah" path="res://ufo.tscn" id="3_6xsbg"]
-[ext_resource type="Script" path="res://ufo_spawner.gd" id="4_gm47b"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gm47b"]
-size = Vector2(55, 53)
+[ext_resource type="PackedScene" uid="uid://nb8daasaeu3i" path="res://explosion.tscn" id="3_c5ar1"]
+[ext_resource type="Script" uid="uid://ck2i25kw3ks1m" path="res://ufo_spawner.gd" id="4_gm47b"]
+[ext_resource type="Texture2D" uid="uid://csfstyjj1bcb6" path="res://sprites/bomb.png" id="8_8wc7a"]
+[ext_resource type="PackedScene" uid="uid://otfovfdhyg6k" path="res://spiral_node.tscn" id="9_otu4l"]
 
 [node name="shooter_game" type="Node2D"]
 script = ExtResource("1_c5ar1")
 
-[node name="ufo3" parent="." instance=ExtResource("3_6xsbg")]
-position = Vector2(232, 59)
+[node name="spiral_node" parent="." instance=ExtResource("9_otu4l")]
 
-[node name="Timer" parent="ufo3" index="1"]
-wait_time = 2.47548
+[node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="dude" type="CharacterBody2D" parent="." node_paths=PackedStringArray("bullet_spawn")]
-collision_mask = 6
-motion_mode = 1
-script = ExtResource("1_opyg7")
-size = 50
-line_size = 5
-color = Color(0, 1, 0.25, 0.45098)
-turn_left_input = "left"
-turn_right_input = "right"
-forward_input = "forward"
-back_input = "back"
-bullet_scene = ExtResource("2_mugk0")
-bullet_spawn = NodePath("Marker2D")
+[node name="Heroplanet" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ejtda")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="dude"]
-position = Vector2(0.5, -0.5)
-shape = SubResource("RectangleShape2D_gm47b")
-
-[node name="Marker2D" type="Marker2D" parent="dude"]
-position = Vector2(0, -38)
-
-[node name="Timer" type="Timer" parent="dude"]
-wait_time = 0.1
-
-[node name="Camera2D" type="Camera2D" parent="dude"]
-position = Vector2(-1, 0)
-position_smoothing_enabled = true
-
-[node name="ufo" parent="." instance=ExtResource("3_6xsbg")]
-position = Vector2(-346, 128)
-
-[node name="Timer" parent="ufo" index="1"]
-wait_time = 8.12282
-
-[node name="ufo2" parent="." instance=ExtResource("3_6xsbg")]
-position = Vector2(402, 68)
-
-[node name="Timer" parent="ufo2" index="1"]
-wait_time = 7.44153
+[node name="dude" parent="." instance=ExtResource("2_gm47b")]
+rotation = 5.68262
+collision_mask = 5
+color = Color(0, 1, 0.25, 0.847059)
+speed = 500.0
+lives = 10
+explosion = ExtResource("3_c5ar1")
 
 [node name="ufo_spawner" type="Marker2D" parent="."]
 script = ExtResource("4_gm47b")
 ufo_scene = ExtResource("3_6xsbg")
+count = 5
+
+[node name="ufo_spawner3" type="Marker2D" parent="."]
+position = Vector2(34, -168)
+script = ExtResource("4_gm47b")
+ufo_scene = ExtResource("9_otu4l")
+radius = 500.0
+rate = 5
+auto_spawn = true
+
+[node name="ufo_spawner4" type="Marker2D" parent="."]
+position = Vector2(34, -168)
+script = ExtResource("4_gm47b")
+ufo_scene = ExtResource("9_otu4l")
 radius = 300.0
 count = 10
+rate = 5
+auto_spawn = true
 
-[node name="Timer" type="Timer" parent="ufo_spawner"]
+[node name="ufo_spawner5" type="Marker2D" parent="."]
+position = Vector2(34, -168)
+script = ExtResource("4_gm47b")
+ufo_scene = ExtResource("9_otu4l")
+radius = 700.0
+count = 30
+rate = 5
+auto_spawn = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ufo_count" type="Label" parent="CanvasLayer"]
 offset_right = 134.0
 offset_bottom = 30.0
-text = "UFO_COUNT:"
+text = "UFO_COUNT: 0"
 
 [node name="lives" type="Label" parent="CanvasLayer"]
-offset_top = 53.0
-offset_right = 132.0
-offset_bottom = 83.0
+offset_left = 1.0
+offset_top = 110.0
+offset_right = 331.0
+offset_bottom = 185.0
 text = "LIVES: 10"
 
-[connection signal="timeout" from="dude/Timer" to="dude" method="_on_timer_timeout"]
+[node name="ammo" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 221.0
+offset_right = 338.0
+offset_bottom = 296.0
+text = "AMMO: 100"
 
-[editable path="ufo3"]
-[editable path="ufo"]
-[editable path="ufo2"]
+[node name="level" type="Label" parent="CanvasLayer"]
+offset_left = 8.0
+offset_top = 320.0
+offset_right = 338.0
+offset_bottom = 395.0
+text = "LEVEL: 0"
+
+[node name="target" type="Label" parent="CanvasLayer"]
+offset_left = 14.0
+offset_top = 419.0
+offset_right = 344.0
+offset_bottom = 494.0
+text = "ufo_COUNT: 0"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(775, 259)
+texture = ExtResource("8_8wc7a")

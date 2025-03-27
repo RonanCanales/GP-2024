@@ -52,6 +52,38 @@ Weekly engagement mark is assessessed automatically by evaluating the number of 
 
 # Semester 2
 
+## Week 8 - 3D character animation
+- [Animation Blending Part 1](https://www.youtube.com/watch?v=iElHZhOxGYA)
+- [Animation Blending Part 2](https://www.youtube.com/watch?v=iElHZhOxGYA)
+- [Look at](https://www.youtube.com/watch?v=iElHZhOxGYA)
+- [Animation Trees](https://www.youtube.com/watch?v=iElHZhOxGYA)
+- [Vuntra City](https://www.youtube.com/watch?v=H-cL8zlNsGI)
+- [Godot 3D Characters](https://github.com/gdquest-demos/godot-4-3D-Characters)
+
+## Lab
+- See Brightspace for the lab
+
+## Week 7 - GDC
+
+## Week 6 - 3D FPS
+- [3D nodes](labs/3d.md)
+
+### Lab Exercise
+- [Create a 3D endless runner](labs/endless_runner.md)
+
+## Week 5 - Enemy AI
+- [Air Sea Battle](https://www.retrogames.cz/play_349-Atari2600.php)
+- [Lab](labs/enemy_ai.md)
+
+## Week 4 - Tweens & Juice
+- [Tweens](labs/tweens.md)
+- [Tweens lab](labs/tweens_lab.md)
+
+## Week 3
+- Shooter Game
+
+## [Shooter Game Exercises](labs/shooter_game_lab.md)
+
 ## Week 2 
 - More procedural drawing
 - [Spirals] - Have a look at the spirals scene!
