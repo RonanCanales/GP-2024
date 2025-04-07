@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://buxyblxw6r1f7"]
+
+[ext_resource type="PackedScene" uid="uid://conoke2y6odhy" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-broken.glb" id="1_he7gp"]
+[ext_resource type="Texture2D" uid="uid://oggdqluni0t" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/Textures/colormap.png" id="2_rbta5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s2bc7"]
+albedo_texture = ExtResource("2_rbta5")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0crld"]
+points = PackedVector3Array(-0.144438, 0.358046, 0.0665052, -0.144438, 0.358046, -0.0665513, -0.173576, 0.358046, 0.0665052, 0.115036, 0.0399932, 0.220174, 0.173501, 0.316265, 0.0665052, -0.173576, 0.358046, -0.0665513, 0.173501, 0.316265, -0.0665513, 0.194973, 0.0779885, -0.07475, -0.195, 0.0779885, 0.0747328, 0.115036, 0, 0.220174, 0.219349, 0.0399932, 0.178863, 0.291383, 0.0399932, 0.121587, -0.195, 0.0779885, -0.07475, 0.194973, 0, -0.07475, -0.195, 0, 0.0747328, 0.219349, 0, 0.178863, 0.291383, 0, 0.121587, -0.195, 0, -0.07475)
+
+[node name="gravestone-broken2" instance=ExtResource("1_he7gp")]
+
+[node name="gravestone-broken" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_s2bc7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="gravestone-broken" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gravestone-broken/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_0crld")

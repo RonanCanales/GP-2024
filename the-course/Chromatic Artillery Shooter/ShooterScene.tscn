@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://7aaykysf7bha"]
+[gd_scene load_steps=23 format=3 uid="uid://7aaykysf7bha"]
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
@@ -10,7 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://hellx2hfs4y4" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_round_2.tscn" id="8_84wvl"]
 [ext_resource type="PackedScene" uid="uid://ddgrxdvt3ifow" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/iron_fence_2.tscn" id="9_sb6dl"]
 [ext_resource type="PackedScene" uid="uid://cnddqip48lnot" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/iron-fence-damaged.glb" id="10_6kiw1"]
+[ext_resource type="PackedScene" uid="uid://buxyblxw6r1f7" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_broken_2.tscn" id="10_ijg81"]
 [ext_resource type="PackedScene" uid="uid://b3xabdte3ei21" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/iron_fence_border_column_2.tscn" id="11_p8538"]
+[ext_resource type="PackedScene" uid="uid://dpwun0n1s252s" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_wide_2.tscn" id="12_kfj6g"]
+[ext_resource type="PackedScene" uid="uid://cecbt53kt213r" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_cross_large_2.tscn" id="13_ghgvr"]
+[ext_resource type="PackedScene" uid="uid://dhbvfa12mr8ip" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_debris_2.tscn" id="14_pc7q7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -57,7 +61,6 @@ shape = SubResource("WorldBoundaryShape3D_ooqnc")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0889175, 0)
-floor_max_angle = 1.0472
 script = ExtResource("1_75jxw")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
@@ -193,18 +196,6 @@ transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0
 [node name="grave5" parent="Grave" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, -2.46152)
 
-[node name="gravestone-round2" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, -0.53485)
-
-[node name="gravestone-round3" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, -0.53485)
-
-[node name="gravestone-round4" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, -0.53485)
-
-[node name="gravestone-round5" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, -0.53485)
-
 [node name="grave6" parent="Grave" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, 4.41787)
 
@@ -223,11 +214,23 @@ transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0
 [node name="gravestone-round7" parent="Grave" instance=ExtResource("8_84wvl")]
 transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, 6.34454)
 
-[node name="gravestone-round8" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, 6.34454)
-
 [node name="gravestone-round9" parent="Grave" instance=ExtResource("8_84wvl")]
 transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, 6.34454)
+
+[node name="gravestone-debris2" parent="Grave" instance=ExtResource("14_pc7q7")]
+transform = Transform3D(-2.33059, 0, -2.03747e-07, 0, 2.33059, 0, 2.03747e-07, 0, -2.33059, -14.3037, 1.79752e-06, -0.710011)
+
+[node name="gravestone-broken2" parent="Grave" instance=ExtResource("10_ijg81")]
+transform = Transform3D(2.473, 0, 0, 0, 2.473, 0, 0, 0, 2.473, -17.7442, 0.00552233, -0.485924)
+
+[node name="gravestone-broken3" parent="Grave" instance=ExtResource("10_ijg81")]
+transform = Transform3D(2.473, 0, 0, 0, 2.473, 0, 0, 0, 2.473, -23.327, 0.00552233, -0.485924)
+
+[node name="gravestone-cross-large2" parent="Grave" instance=ExtResource("13_ghgvr")]
+transform = Transform3D(2.33059, 0, 0, 0, 2.33059, 0, 0, 0, 2.33059, -26.3377, 1.79752e-06, -0.509708)
+
+[node name="gravestone-wide2" parent="Grave" instance=ExtResource("12_kfj6g")]
+transform = Transform3D(-2.33059, 0, -2.03747e-07, 0, 2.33059, 0, 2.03747e-07, 0, -2.33059, -23.1641, 1.79752e-06, 6.33733)
 
 [node name="Fences" type="Node3D" parent="Grave"]
 transform = Transform3D(-9.87969e-08, 0, -2.26021, 0, 2.26021, 0, 2.26021, 0, -9.87969e-08, -11.3193, 1.79752e-06, -2.57868)
@@ -305,22 +308,13 @@ transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -17.7005, 0, -2.46152)
 
 [node name="grave4" parent="Grave2" instance=ExtResource("7_6iwkb")]
-transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0, -2.46152)
+transform = Transform3D(2.81343, -0.0117561, -0.0107624, 0.011787, 2.81344, 0.00806709, 0.0107285, -0.00811211, 2.81345, -23.2279, 0, -2.46152)
 
 [node name="grave5" parent="Grave2" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, -2.46152)
 
 [node name="gravestone-round2" parent="Grave2" instance=ExtResource("8_84wvl")]
 transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, -0.53485)
-
-[node name="gravestone-round3" parent="Grave2" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, -0.53485)
-
-[node name="gravestone-round4" parent="Grave2" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, -0.53485)
-
-[node name="gravestone-round5" parent="Grave2" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, -0.53485)
 
 [node name="grave6" parent="Grave2" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, 4.41787)
@@ -334,17 +328,26 @@ transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0
 [node name="grave9" parent="Grave2" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, 4.41787)
 
-[node name="gravestone-round6" parent="Grave2" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, 6.34454)
-
 [node name="gravestone-round7" parent="Grave2" instance=ExtResource("8_84wvl")]
 transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, 6.34454)
 
-[node name="gravestone-round8" parent="Grave2" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, 6.34454)
-
 [node name="gravestone-round9" parent="Grave2" instance=ExtResource("8_84wvl")]
 transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, 6.34454)
+
+[node name="gravestone-wide2" parent="Grave2" instance=ExtResource("12_kfj6g")]
+transform = Transform3D(-2.473, 0, 3.73413e-07, 0, 2.473, 0, -3.73413e-07, 0, -2.473, -17.5433, 1.79752e-06, -0.574348)
+
+[node name="gravestone-wide3" parent="Grave2" instance=ExtResource("12_kfj6g")]
+transform = Transform3D(-2.473, 0, 3.73413e-07, 0, 2.473, 0, -3.73413e-07, 0, -2.473, -23.0832, 1.79752e-06, 6.4743)
+
+[node name="gravestone-cross-large2" parent="Grave2" instance=ExtResource("13_ghgvr")]
+transform = Transform3D(2.473, 0, 0, 0, 2.473, 0, 0, 0, 2.473, -23.1362, 1.79752e-06, -0.389702)
+
+[node name="gravestone-cross-large3" parent="Grave2" instance=ExtResource("13_ghgvr")]
+transform = Transform3D(2.473, 0, 0, 0, 2.473, 0, 0, 0, 2.473, -14.288, 1.79752e-06, 6.40976)
+
+[node name="gravestone-debris2" parent="Grave2" instance=ExtResource("14_pc7q7")]
+transform = Transform3D(-2.473, 0, -2.16197e-07, 0, 2.473, 0, 2.16197e-07, 0, -2.473, -26.2436, 1.79752e-06, -0.540585)
 
 [node name="Fences2" type="Node3D" parent="Grave2"]
 transform = Transform3D(-9.87969e-08, 0, -2.26021, 0, 2.26021, 0, 2.26021, 0, -9.87969e-08, -11.3193, 1.79752e-06, -2.57868)
@@ -374,19 +377,19 @@ transform = Transform3D(1, 5.06423e-09, -2.9436e-10, -5.06423e-09, 0.993266, -0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.08412, 0, 8.90705)
 
 [node name="iron-fence-damaged2" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
-transform = Transform3D(-0.994905, -6.90488e-08, -3.51844e-08, -3.51844e-08, 0.804925, -0.584748, 6.90488e-08, -0.584748, -0.804925, 2.89066, -0.276126, -0.695806)
+transform = Transform3D(-0.994905, -8.69744e-08, -5.06268e-10, -5.0625e-10, 0.0115817, -0.994837, 8.69744e-08, -0.994837, -0.0115817, 2.89066, -0.382646, -0.633871)
 
 [node name="iron-fence-damaged6" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
 transform = Transform3D(-0.994905, -8.69773e-08, 3.8019e-15, 0, -4.34887e-08, -0.994905, 8.69773e-08, -0.994905, 4.34887e-08, 2.09021, -0.428969, 8.57633)
 
 [node name="iron-fence-damaged4" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
-transform = Transform3D(-4.34887e-08, -0.538218, 0.836754, 1.18507e-14, 0.836754, 0.538218, -0.994905, 2.35263e-08, -3.65757e-08, 5.94021, 0.267598, 1.01273)
+transform = Transform3D(-4.34887e-08, -0.992988, -0.0617254, -8.05477e-15, -0.0617255, 0.992988, -0.994905, 4.34049e-08, 2.6981e-09, 5.23953, 0.525151, 1.09385)
 
 [node name="iron-fence-damaged5" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
-transform = Transform3D(-4.34887e-08, 0.723767, 0.68264, -2.96267e-15, 0.68264, -0.723767, -0.994905, -3.16369e-08, -2.98391e-08, 5.82159, -0.344445, 2.94141)
+transform = Transform3D(-4.34887e-08, 0.994569, 0.0258699, 5.92535e-15, 0.0258699, -0.994568, -0.994905, -4.3474e-08, -1.13081e-09, 5.47838, -0.414099, 2.94141)
 
 [node name="iron-fence-damaged3" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
-transform = Transform3D(0.994905, 5.51382e-09, -3.50955e-10, -5.51382e-09, 0.986876, -0.126142, -3.50958e-10, 0.126142, 0.986876, -0.0138415, -0.0960015, 0.0177078)
+transform = Transform3D(0.0552614, -0.993354, 0.00548285, 0.0258589, -0.00405109, -0.99456, 0.993032, 0.0553848, 0.0255936, 0.506424, -0.437175, -0.155517)
 
 [node name="iron-fence3" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
 transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928e-08, 6.00509, 0, 1.95568)
