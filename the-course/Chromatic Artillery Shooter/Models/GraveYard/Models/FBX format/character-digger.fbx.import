@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://7fa2oof45tu6"
-path="res://.godot/imported/character-digger.fbx-e276084f5aaa0ff1a0b56364bd3fce12.scn"
+path="res://.godot/imported/character-digger.fbx-be3cae36a354078bacb104dd38507fc9.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/character-digger.fbx"
-dest_files=["res://.godot/imported/character-digger.fbx-e276084f5aaa0ff1a0b56364bd3fce12.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/character-digger.fbx"
+dest_files=["res://.godot/imported/character-digger.fbx-be3cae36a354078bacb104dd38507fc9.scn"]
 
 [params]
 

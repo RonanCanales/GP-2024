@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cx0kb433ww5vs"
-path="res://.godot/imported/crypt-small-roof.fbx-baa92d39e0e94975a7ede885dd62e487.scn"
+path="res://.godot/imported/crypt-small-roof.fbx-497afc0297e9988138d5a6cc09f0247c.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/crypt-small-roof.fbx"
-dest_files=["res://.godot/imported/crypt-small-roof.fbx-baa92d39e0e94975a7ede885dd62e487.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/crypt-small-roof.fbx"
+dest_files=["res://.godot/imported/crypt-small-roof.fbx-497afc0297e9988138d5a6cc09f0247c.scn"]
 
 [params]
 

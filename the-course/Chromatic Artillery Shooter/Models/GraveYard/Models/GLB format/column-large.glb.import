@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bb5ggis7l0too"
-path="res://.godot/imported/column-large.glb-d0508f7924ab21f498b68d4700bf702a.scn"
+path="res://.godot/imported/column-large.glb-41bcc28bbd8bf6822a9624ce7468088c.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/column-large.glb"
-dest_files=["res://.godot/imported/column-large.glb-d0508f7924ab21f498b68d4700bf702a.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/column-large.glb"
+dest_files=["res://.godot/imported/column-large.glb-41bcc28bbd8bf6822a9624ce7468088c.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2dl4ynxtg1ii"
-path="res://.godot/imported/stone-wall-curve.fbx-333828ee71e928151a076529d4c13b52.scn"
+path="res://.godot/imported/stone-wall-curve.fbx-70525b79af9857b2cde3ee52060f60ed.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/stone-wall-curve.fbx"
-dest_files=["res://.godot/imported/stone-wall-curve.fbx-333828ee71e928151a076529d4c13b52.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/stone-wall-curve.fbx"
+dest_files=["res://.godot/imported/stone-wall-curve.fbx-70525b79af9857b2cde3ee52060f60ed.scn"]
 
 [params]
 

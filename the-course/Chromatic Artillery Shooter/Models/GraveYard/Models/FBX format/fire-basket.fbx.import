@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://swrgphoytelt"
-path="res://.godot/imported/fire-basket.fbx-2167c8ab38bf7410283c25c63c567f49.scn"
+path="res://.godot/imported/fire-basket.fbx-7ad52db5221c2cb348b94a4ccd99fe12.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/fire-basket.fbx"
-dest_files=["res://.godot/imported/fire-basket.fbx-2167c8ab38bf7410283c25c63c567f49.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/fire-basket.fbx"
+dest_files=["res://.godot/imported/fire-basket.fbx-7ad52db5221c2cb348b94a4ccd99fe12.scn"]
 
 [params]
 

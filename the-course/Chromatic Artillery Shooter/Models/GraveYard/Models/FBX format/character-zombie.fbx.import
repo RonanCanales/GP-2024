@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dth161xb816s5"
-path="res://.godot/imported/character-zombie.fbx-f8da5b27e3c5e925485a9852820a7bcf.scn"
+path="res://.godot/imported/character-zombie.fbx-e4dc8a2d23ad2a37783e7cbf8f13e907.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/character-zombie.fbx"
-dest_files=["res://.godot/imported/character-zombie.fbx-f8da5b27e3c5e925485a9852820a7bcf.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/character-zombie.fbx"
+dest_files=["res://.godot/imported/character-zombie.fbx-e4dc8a2d23ad2a37783e7cbf8f13e907.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0llkpvsm1di4"
-path="res://.godot/imported/road.glb-05747635f189e13fd9191065bf21f164.scn"
+path="res://.godot/imported/road.glb-ea60ac820fa541d29655c1f9d5b32f0a.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/road.glb"
-dest_files=["res://.godot/imported/road.glb-05747635f189e13fd9191065bf21f164.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/road.glb"
+dest_files=["res://.godot/imported/road.glb-ea60ac820fa541d29655c1f9d5b32f0a.scn"]
 
 [params]
 

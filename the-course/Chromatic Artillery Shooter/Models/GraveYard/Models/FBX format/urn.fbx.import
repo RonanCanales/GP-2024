@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dq4prny8wuydy"
-path="res://.godot/imported/urn.fbx-5f5cd550c662a90114a3185b3670a669.scn"
+path="res://.godot/imported/urn.fbx-1dfb277ad60b94e67f0daa300ed8d111.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/urn.fbx"
-dest_files=["res://.godot/imported/urn.fbx-5f5cd550c662a90114a3185b3670a669.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/urn.fbx"
+dest_files=["res://.godot/imported/urn.fbx-1dfb277ad60b94e67f0daa300ed8d111.scn"]
 
 [params]
 

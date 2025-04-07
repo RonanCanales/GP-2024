@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c2c4rbk4q113j"
-path="res://.godot/imported/character-ghost.glb-426612826d9cdd496b7933ea5b1cb849.scn"
+path="res://.godot/imported/character-ghost.glb-17d3bbf5c157b24de60ff76a9f23e875.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/character-ghost.glb"
-dest_files=["res://.godot/imported/character-ghost.glb-426612826d9cdd496b7933ea5b1cb849.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/character-ghost.glb"
+dest_files=["res://.godot/imported/character-ghost.glb-17d3bbf5c157b24de60ff76a9f23e875.scn"]
 
 [params]
 

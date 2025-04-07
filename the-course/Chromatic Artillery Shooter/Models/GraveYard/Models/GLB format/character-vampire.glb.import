@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bynyyj548spwn"
-path="res://.godot/imported/character-vampire.glb-79124998f790234840df34481a126f4a.scn"
+path="res://.godot/imported/character-vampire.glb-4f9cd467aa719ed6470de76891de13a7.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/character-vampire.glb"
-dest_files=["res://.godot/imported/character-vampire.glb-79124998f790234840df34481a126f4a.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/character-vampire.glb"
+dest_files=["res://.godot/imported/character-vampire.glb-4f9cd467aa719ed6470de76891de13a7.scn"]
 
 [params]
 

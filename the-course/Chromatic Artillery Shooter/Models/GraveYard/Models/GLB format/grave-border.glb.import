@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lqbpqqne1ceo"
-path="res://.godot/imported/grave-border.glb-5f20e54d8206170036fdb3fb58390382.scn"
+path="res://.godot/imported/grave-border.glb-5f9c44167e68403ddd0480bbe38fb2a6.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/grave-border.glb"
-dest_files=["res://.godot/imported/grave-border.glb-5f20e54d8206170036fdb3fb58390382.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/grave-border.glb"
+dest_files=["res://.godot/imported/grave-border.glb-5f9c44167e68403ddd0480bbe38fb2a6.scn"]
 
 [params]
 

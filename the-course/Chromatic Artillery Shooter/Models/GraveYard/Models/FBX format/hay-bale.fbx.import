@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://df5h814qk56ks"
-path="res://.godot/imported/hay-bale.fbx-48036394a74c820c7968c7343e7faedf.scn"
+path="res://.godot/imported/hay-bale.fbx-d19dcfb746d327b2d24ed2d4c81d629f.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/hay-bale.fbx"
-dest_files=["res://.godot/imported/hay-bale.fbx-48036394a74c820c7968c7343e7faedf.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/hay-bale.fbx"
+dest_files=["res://.godot/imported/hay-bale.fbx-d19dcfb746d327b2d24ed2d4c81d629f.scn"]
 
 [params]
 

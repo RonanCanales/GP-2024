@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://fpykkp8xwfbl"
-path="res://.godot/imported/character-vampire.fbx-6e6bb481fb639acd975dea8918bbdfe6.scn"
+path="res://.godot/imported/character-vampire.fbx-ff4eb91fe5bb09b477976da7a4926ed9.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/character-vampire.fbx"
-dest_files=["res://.godot/imported/character-vampire.fbx-6e6bb481fb639acd975dea8918bbdfe6.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/character-vampire.fbx"
+dest_files=["res://.godot/imported/character-vampire.fbx-ff4eb91fe5bb09b477976da7a4926ed9.scn"]
 
 [params]
 

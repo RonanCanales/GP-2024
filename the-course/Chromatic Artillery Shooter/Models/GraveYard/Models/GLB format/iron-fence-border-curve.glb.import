@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdjl8gllb2pxr"
-path="res://.godot/imported/iron-fence-border-curve.glb-737d519fb248340dc15c207c59d86493.scn"
+path="res://.godot/imported/iron-fence-border-curve.glb-818e3909c5a3eb6c370dc9746fc6172e.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/iron-fence-border-curve.glb"
-dest_files=["res://.godot/imported/iron-fence-border-curve.glb-737d519fb248340dc15c207c59d86493.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/iron-fence-border-curve.glb"
+dest_files=["res://.godot/imported/iron-fence-border-curve.glb-818e3909c5a3eb6c370dc9746fc6172e.scn"]
 
 [params]
 

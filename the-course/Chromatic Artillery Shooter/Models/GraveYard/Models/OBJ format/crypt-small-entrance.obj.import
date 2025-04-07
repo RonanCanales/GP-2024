@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://du11af6wngbm8"
-path="res://.godot/imported/crypt-small-entrance.obj-c04441856cc03a2947bb9379c6b73869.mesh"
+path="res://.godot/imported/crypt-small-entrance.obj-cacca7c1d33d2a0c0b8cdd6d3897cc12.mesh"
 
 [deps]
 
-files=["res://.godot/imported/crypt-small-entrance.obj-c04441856cc03a2947bb9379c6b73869.mesh"]
+files=["res://.godot/imported/crypt-small-entrance.obj-cacca7c1d33d2a0c0b8cdd6d3897cc12.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/crypt-small-entrance.obj"
-dest_files=["res://.godot/imported/crypt-small-entrance.obj-c04441856cc03a2947bb9379c6b73869.mesh", "res://.godot/imported/crypt-small-entrance.obj-c04441856cc03a2947bb9379c6b73869.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/crypt-small-entrance.obj"
+dest_files=["res://.godot/imported/crypt-small-entrance.obj-cacca7c1d33d2a0c0b8cdd6d3897cc12.mesh", "res://.godot/imported/crypt-small-entrance.obj-cacca7c1d33d2a0c0b8cdd6d3897cc12.mesh"]
 
 [params]
 

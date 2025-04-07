@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dowe876ju2dlw"
-path="res://.godot/imported/pumpkin-carved.glb-7896569a94cacdb9cab4829fe42b7137.scn"
+path="res://.godot/imported/pumpkin-carved.glb-e1eee93421467779e3667a71feac8a59.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/pumpkin-carved.glb"
-dest_files=["res://.godot/imported/pumpkin-carved.glb-7896569a94cacdb9cab4829fe42b7137.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pumpkin-carved.glb"
+dest_files=["res://.godot/imported/pumpkin-carved.glb-e1eee93421467779e3667a71feac8a59.scn"]
 
 [params]
 

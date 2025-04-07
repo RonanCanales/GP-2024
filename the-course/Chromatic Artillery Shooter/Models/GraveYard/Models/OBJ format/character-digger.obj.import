@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://5s88fg5u0w3e"
-path="res://.godot/imported/character-digger.obj-445f57c00ec67518ed381b393cf467db.mesh"
+path="res://.godot/imported/character-digger.obj-f9cc6049c370770b241e755a1e13eedb.mesh"
 
 [deps]
 
-files=["res://.godot/imported/character-digger.obj-445f57c00ec67518ed381b393cf467db.mesh"]
+files=["res://.godot/imported/character-digger.obj-f9cc6049c370770b241e755a1e13eedb.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/character-digger.obj"
-dest_files=["res://.godot/imported/character-digger.obj-445f57c00ec67518ed381b393cf467db.mesh", "res://.godot/imported/character-digger.obj-445f57c00ec67518ed381b393cf467db.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/character-digger.obj"
+dest_files=["res://.godot/imported/character-digger.obj-f9cc6049c370770b241e755a1e13eedb.mesh", "res://.godot/imported/character-digger.obj-f9cc6049c370770b241e755a1e13eedb.mesh"]
 
 [params]
 

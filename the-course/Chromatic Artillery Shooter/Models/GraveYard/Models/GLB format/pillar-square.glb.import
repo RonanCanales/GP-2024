@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://vhtwm2xfvviw"
-path="res://.godot/imported/pillar-square.glb-766802b71b712d0b33db56cefb40adf3.scn"
+path="res://.godot/imported/pillar-square.glb-da54d8104aaf967e05a4beb306b7c560.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/pillar-square.glb"
-dest_files=["res://.godot/imported/pillar-square.glb-766802b71b712d0b33db56cefb40adf3.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pillar-square.glb"
+dest_files=["res://.godot/imported/pillar-square.glb-da54d8104aaf967e05a4beb306b7c560.scn"]
 
 [params]
 

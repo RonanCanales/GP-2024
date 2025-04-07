@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0sfgi6iygqip"
-path="res://.godot/imported/stone-wall.fbx-fb8bd25c4cebfa64de625a8035884177.scn"
+path="res://.godot/imported/stone-wall.fbx-44f35dc6844e610b45262fd1abe9b13a.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/stone-wall.fbx"
-dest_files=["res://.godot/imported/stone-wall.fbx-fb8bd25c4cebfa64de625a8035884177.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/stone-wall.fbx"
+dest_files=["res://.godot/imported/stone-wall.fbx-44f35dc6844e610b45262fd1abe9b13a.scn"]
 
 [params]
 

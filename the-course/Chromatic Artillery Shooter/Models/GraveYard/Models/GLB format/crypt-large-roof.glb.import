@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dw602ii1rpkpk"
-path="res://.godot/imported/crypt-large-roof.glb-c2fc41e2a8c33e782bd1b847c24f6532.scn"
+path="res://.godot/imported/crypt-large-roof.glb-8930b65fb3464505f1a92484c105deec.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/crypt-large-roof.glb"
-dest_files=["res://.godot/imported/crypt-large-roof.glb-c2fc41e2a8c33e782bd1b847c24f6532.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/crypt-large-roof.glb"
+dest_files=["res://.godot/imported/crypt-large-roof.glb-8930b65fb3464505f1a92484c105deec.scn"]
 
 [params]
 

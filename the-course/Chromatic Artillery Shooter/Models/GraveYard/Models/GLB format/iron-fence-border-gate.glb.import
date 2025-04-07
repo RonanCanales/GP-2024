@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bjuoc28arxk7t"
-path="res://.godot/imported/iron-fence-border-gate.glb-39e3b478d27496d730339c3686e65262.scn"
+path="res://.godot/imported/iron-fence-border-gate.glb-dce03ab813af08a719a9e5dafc571c60.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/iron-fence-border-gate.glb"
-dest_files=["res://.godot/imported/iron-fence-border-gate.glb-39e3b478d27496d730339c3686e65262.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/iron-fence-border-gate.glb"
+dest_files=["res://.godot/imported/iron-fence-border-gate.glb-dce03ab813af08a719a9e5dafc571c60.scn"]
 
 [params]
 

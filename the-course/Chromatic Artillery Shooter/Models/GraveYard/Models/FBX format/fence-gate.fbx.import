@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bptdk3ibfqsvn"
-path="res://.godot/imported/fence-gate.fbx-91ae9ba92c999324c35097de0cf568de.scn"
+path="res://.godot/imported/fence-gate.fbx-51d9a1ae1b20de6b2295480092ccecf0.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/fence-gate.fbx"
-dest_files=["res://.godot/imported/fence-gate.fbx-91ae9ba92c999324c35097de0cf568de.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/fence-gate.fbx"
+dest_files=["res://.godot/imported/fence-gate.fbx-51d9a1ae1b20de6b2295480092ccecf0.scn"]
 
 [params]
 

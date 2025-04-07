@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://by1ymkrybkcay"
-path="res://.godot/imported/altar-stone.glb-dcd302e673b659d4049c8788afd90a55.scn"
+path="res://.godot/imported/altar-stone.glb-bc8bac786699af5c8b8cc602d7d0f27f.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/altar-stone.glb"
-dest_files=["res://.godot/imported/altar-stone.glb-dcd302e673b659d4049c8788afd90a55.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/altar-stone.glb"
+dest_files=["res://.godot/imported/altar-stone.glb-bc8bac786699af5c8b8cc602d7d0f27f.scn"]
 
 [params]
 

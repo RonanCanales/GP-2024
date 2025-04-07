@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dvwabfmlj82td"
-path="res://.godot/imported/shovel-dirt.fbx-912598d3a858637cf8acf4747c184ae8.scn"
+path="res://.godot/imported/shovel-dirt.fbx-d8c47c6328ac59329635fbf4f0bd9747.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/shovel-dirt.fbx"
-dest_files=["res://.godot/imported/shovel-dirt.fbx-912598d3a858637cf8acf4747c184ae8.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/shovel-dirt.fbx"
+dest_files=["res://.godot/imported/shovel-dirt.fbx-d8c47c6328ac59329635fbf4f0bd9747.scn"]
 
 [params]
 

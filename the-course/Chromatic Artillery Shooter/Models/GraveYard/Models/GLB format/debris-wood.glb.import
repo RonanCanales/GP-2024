@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dr7ipddhqrkn0"
-path="res://.godot/imported/debris-wood.glb-4803d860f33c3ee4aad5a8af846f1b2d.scn"
+path="res://.godot/imported/debris-wood.glb-18afb7095bc651feb8f5bcd9088488d0.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/debris-wood.glb"
-dest_files=["res://.godot/imported/debris-wood.glb-4803d860f33c3ee4aad5a8af846f1b2d.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/debris-wood.glb"
+dest_files=["res://.godot/imported/debris-wood.glb-18afb7095bc651feb8f5bcd9088488d0.scn"]
 
 [params]
 

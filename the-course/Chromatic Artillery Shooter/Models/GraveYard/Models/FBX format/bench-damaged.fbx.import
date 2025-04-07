@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bkw8f3245yegj"
-path="res://.godot/imported/bench-damaged.fbx-f5e8ba189fc02dc7017fe854344f7b88.scn"
+path="res://.godot/imported/bench-damaged.fbx-346d43a5d0fa58cc8798787fefd1699a.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/bench-damaged.fbx"
-dest_files=["res://.godot/imported/bench-damaged.fbx-f5e8ba189fc02dc7017fe854344f7b88.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/bench-damaged.fbx"
+dest_files=["res://.godot/imported/bench-damaged.fbx-346d43a5d0fa58cc8798787fefd1699a.scn"]
 
 [params]
 

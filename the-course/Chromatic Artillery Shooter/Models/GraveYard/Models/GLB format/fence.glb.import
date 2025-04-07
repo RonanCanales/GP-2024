@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cx03pcvn0nnb5"
-path="res://.godot/imported/fence.glb-10cf148a2da688a4dbda9b6ef29a4c91.scn"
+path="res://.godot/imported/fence.glb-c4ed687b558517cce5bf22a1d044e626.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/fence.glb"
-dest_files=["res://.godot/imported/fence.glb-10cf148a2da688a4dbda9b6ef29a4c91.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/fence.glb"
+dest_files=["res://.godot/imported/fence.glb-c4ed687b558517cce5bf22a1d044e626.scn"]
 
 [params]
 

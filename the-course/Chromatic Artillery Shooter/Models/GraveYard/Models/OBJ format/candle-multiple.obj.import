@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dkx11tgxowse4"
-path="res://.godot/imported/candle-multiple.obj-9fa3ee73c3830222124f718ff6940f6f.mesh"
+path="res://.godot/imported/candle-multiple.obj-631d8df6e797714f9c2630edafcbb318.mesh"
 
 [deps]
 
-files=["res://.godot/imported/candle-multiple.obj-9fa3ee73c3830222124f718ff6940f6f.mesh"]
+files=["res://.godot/imported/candle-multiple.obj-631d8df6e797714f9c2630edafcbb318.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/candle-multiple.obj"
-dest_files=["res://.godot/imported/candle-multiple.obj-9fa3ee73c3830222124f718ff6940f6f.mesh", "res://.godot/imported/candle-multiple.obj-9fa3ee73c3830222124f718ff6940f6f.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/candle-multiple.obj"
+dest_files=["res://.godot/imported/candle-multiple.obj-631d8df6e797714f9c2630edafcbb318.mesh", "res://.godot/imported/candle-multiple.obj-631d8df6e797714f9c2630edafcbb318.mesh"]
 
 [params]
 

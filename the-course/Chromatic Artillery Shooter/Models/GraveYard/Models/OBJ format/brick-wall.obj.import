@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://xn662tt8y7si"
-path="res://.godot/imported/brick-wall.obj-395d74028d85bea4dbe31d41664146c8.mesh"
+path="res://.godot/imported/brick-wall.obj-42c17480f3f845bf7cb836e68e37a3c5.mesh"
 
 [deps]
 
-files=["res://.godot/imported/brick-wall.obj-395d74028d85bea4dbe31d41664146c8.mesh"]
+files=["res://.godot/imported/brick-wall.obj-42c17480f3f845bf7cb836e68e37a3c5.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/brick-wall.obj"
-dest_files=["res://.godot/imported/brick-wall.obj-395d74028d85bea4dbe31d41664146c8.mesh", "res://.godot/imported/brick-wall.obj-395d74028d85bea4dbe31d41664146c8.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/brick-wall.obj"
+dest_files=["res://.godot/imported/brick-wall.obj-42c17480f3f845bf7cb836e68e37a3c5.mesh", "res://.godot/imported/brick-wall.obj-42c17480f3f845bf7cb836e68e37a3c5.mesh"]
 
 [params]
 

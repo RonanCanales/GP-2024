@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cctplrnob6j1o"
-path="res://.godot/imported/pumpkin-tall-carved.fbx-e3a3cbeebcf6d8f73a9ed37b1626eb66.scn"
+path="res://.godot/imported/pumpkin-tall-carved.fbx-d5032f5fa9f1021805f26a59380ff18c.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/pumpkin-tall-carved.fbx"
-dest_files=["res://.godot/imported/pumpkin-tall-carved.fbx-e3a3cbeebcf6d8f73a9ed37b1626eb66.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/pumpkin-tall-carved.fbx"
+dest_files=["res://.godot/imported/pumpkin-tall-carved.fbx-d5032f5fa9f1021805f26a59380ff18c.scn"]
 
 [params]
 

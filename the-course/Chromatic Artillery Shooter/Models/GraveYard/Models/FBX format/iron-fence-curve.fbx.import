@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bkp0g1dugu7sl"
-path="res://.godot/imported/iron-fence-curve.fbx-e16bad63409e0132634a09b7570ef0b1.scn"
+path="res://.godot/imported/iron-fence-curve.fbx-dadaec7909ceb9d672c47cd3b2fcf00d.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/iron-fence-curve.fbx"
-dest_files=["res://.godot/imported/iron-fence-curve.fbx-e16bad63409e0132634a09b7570ef0b1.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/iron-fence-curve.fbx"
+dest_files=["res://.godot/imported/iron-fence-curve.fbx-dadaec7909ceb9d672c47cd3b2fcf00d.scn"]
 
 [params]
 

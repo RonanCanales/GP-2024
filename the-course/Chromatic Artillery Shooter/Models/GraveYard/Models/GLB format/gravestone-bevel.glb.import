@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ei1aluesuau6"
-path="res://.godot/imported/gravestone-bevel.glb-f451acd6a787eb57fb36ddf18ec00eae.scn"
+path="res://.godot/imported/gravestone-bevel.glb-2b1e39be932b10157d0e409b2f0e0e9f.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/gravestone-bevel.glb"
-dest_files=["res://.godot/imported/gravestone-bevel.glb-f451acd6a787eb57fb36ddf18ec00eae.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-bevel.glb"
+dest_files=["res://.godot/imported/gravestone-bevel.glb-2b1e39be932b10157d0e409b2f0e0e9f.scn"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://smc3n7ujiqo3"
-path="res://.godot/imported/character-skeleton.obj-6765cbba42b160722c223857d6158259.mesh"
+path="res://.godot/imported/character-skeleton.obj-232c27702409b10429bb010829d1ccff.mesh"
 
 [deps]
 
-files=["res://.godot/imported/character-skeleton.obj-6765cbba42b160722c223857d6158259.mesh"]
+files=["res://.godot/imported/character-skeleton.obj-232c27702409b10429bb010829d1ccff.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/character-skeleton.obj"
-dest_files=["res://.godot/imported/character-skeleton.obj-6765cbba42b160722c223857d6158259.mesh", "res://.godot/imported/character-skeleton.obj-6765cbba42b160722c223857d6158259.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/character-skeleton.obj"
+dest_files=["res://.godot/imported/character-skeleton.obj-232c27702409b10429bb010829d1ccff.mesh", "res://.godot/imported/character-skeleton.obj-232c27702409b10429bb010829d1ccff.mesh"]
 
 [params]
 

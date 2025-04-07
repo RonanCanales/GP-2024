@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cxasdtc6kkusl"
-path="res://.godot/imported/pine-fall-crooked.glb-aedb9c1e6531e7445ecf425b08880d1d.scn"
+path="res://.godot/imported/pine-fall-crooked.glb-e0d7d1888c96bd70bdd33b6e388185a2.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/pine-fall-crooked.glb"
-dest_files=["res://.godot/imported/pine-fall-crooked.glb-aedb9c1e6531e7445ecf425b08880d1d.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pine-fall-crooked.glb"
+dest_files=["res://.godot/imported/pine-fall-crooked.glb-e0d7d1888c96bd70bdd33b6e388185a2.scn"]
 
 [params]
 

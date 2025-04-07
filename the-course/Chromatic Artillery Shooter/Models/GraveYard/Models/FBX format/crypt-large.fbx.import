@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://uufrs8hlri1c"
-path="res://.godot/imported/crypt-large.fbx-aca337f310ca85bbd787b38073984fbc.scn"
+path="res://.godot/imported/crypt-large.fbx-68c239d4e9fe6d8f496dcf9de20306a3.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/crypt-large.fbx"
-dest_files=["res://.godot/imported/crypt-large.fbx-aca337f310ca85bbd787b38073984fbc.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/crypt-large.fbx"
+dest_files=["res://.godot/imported/crypt-large.fbx-68c239d4e9fe6d8f496dcf9de20306a3.scn"]
 
 [params]
 

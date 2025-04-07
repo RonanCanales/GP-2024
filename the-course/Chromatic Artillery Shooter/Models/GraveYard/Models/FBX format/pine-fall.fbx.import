@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgab3nprcghcq"
-path="res://.godot/imported/pine-fall.fbx-667031e6cf2e7f3eaaabb491f4610b84.scn"
+path="res://.godot/imported/pine-fall.fbx-8d71356ff03e38aa2302dd89b6441407.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/pine-fall.fbx"
-dest_files=["res://.godot/imported/pine-fall.fbx-667031e6cf2e7f3eaaabb491f4610b84.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/pine-fall.fbx"
+dest_files=["res://.godot/imported/pine-fall.fbx-8d71356ff03e38aa2302dd89b6441407.scn"]
 
 [params]
 

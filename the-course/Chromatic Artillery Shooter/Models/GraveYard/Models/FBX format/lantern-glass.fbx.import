@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c4bkraiurjv44"
-path="res://.godot/imported/lantern-glass.fbx-e04c2e12351462d20579255a16ca93de.scn"
+path="res://.godot/imported/lantern-glass.fbx-600554810df1393881803bc785c9cfd1.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/lantern-glass.fbx"
-dest_files=["res://.godot/imported/lantern-glass.fbx-e04c2e12351462d20579255a16ca93de.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/lantern-glass.fbx"
+dest_files=["res://.godot/imported/lantern-glass.fbx-600554810df1393881803bc785c9cfd1.scn"]
 
 [params]
 

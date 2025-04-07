@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bnt7jwn7m5omt"
-path="res://.godot/imported/brick-wall-end.fbx-ed4b8aabee6eab1f3afc37c490c6a72f.scn"
+path="res://.godot/imported/brick-wall-end.fbx-92eab2919094d9f2dcdb169ae016f91f.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/brick-wall-end.fbx"
-dest_files=["res://.godot/imported/brick-wall-end.fbx-ed4b8aabee6eab1f3afc37c490c6a72f.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/brick-wall-end.fbx"
+dest_files=["res://.godot/imported/brick-wall-end.fbx-92eab2919094d9f2dcdb169ae016f91f.scn"]
 
 [params]
 

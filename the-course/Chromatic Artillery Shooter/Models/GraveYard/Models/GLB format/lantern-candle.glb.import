@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c3o2yoqvqs1vl"
-path="res://.godot/imported/lantern-candle.glb-ced403e9b783a822d5cc22a86f086a3e.scn"
+path="res://.godot/imported/lantern-candle.glb-93bc2473fd9a6869524ef5b16ef8be67.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/lantern-candle.glb"
-dest_files=["res://.godot/imported/lantern-candle.glb-ced403e9b783a822d5cc22a86f086a3e.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/lantern-candle.glb"
+dest_files=["res://.godot/imported/lantern-candle.glb-93bc2473fd9a6869524ef5b16ef8be67.scn"]
 
 [params]
 

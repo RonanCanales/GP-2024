@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://bqwn2g1eewgy8"
-path="res://.godot/imported/debris-wood.obj-6cfc138b531625e908279469a1d18e94.mesh"
+path="res://.godot/imported/debris-wood.obj-1106233eafd41f3ca0faad3c8412cc86.mesh"
 
 [deps]
 
-files=["res://.godot/imported/debris-wood.obj-6cfc138b531625e908279469a1d18e94.mesh"]
+files=["res://.godot/imported/debris-wood.obj-1106233eafd41f3ca0faad3c8412cc86.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/debris-wood.obj"
-dest_files=["res://.godot/imported/debris-wood.obj-6cfc138b531625e908279469a1d18e94.mesh", "res://.godot/imported/debris-wood.obj-6cfc138b531625e908279469a1d18e94.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/debris-wood.obj"
+dest_files=["res://.godot/imported/debris-wood.obj-1106233eafd41f3ca0faad3c8412cc86.mesh", "res://.godot/imported/debris-wood.obj-1106233eafd41f3ca0faad3c8412cc86.mesh"]
 
 [params]
 

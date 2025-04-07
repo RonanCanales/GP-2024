@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d15m518aye0gf"
-path="res://.godot/imported/road.fbx-a07f2afebd40932b017ac8e51153f971.scn"
+path="res://.godot/imported/road.fbx-fc34499786a0c0da3f79755f17bb6770.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/road.fbx"
-dest_files=["res://.godot/imported/road.fbx-a07f2afebd40932b017ac8e51153f971.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/road.fbx"
+dest_files=["res://.godot/imported/road.fbx-fc34499786a0c0da3f79755f17bb6770.scn"]
 
 [params]
 

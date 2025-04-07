@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://dpw6uxnxfya5a"
-path="res://.godot/imported/coffin.obj-db48d5a72f8d2a53817eed23a547271d.mesh"
+path="res://.godot/imported/coffin.obj-f931d880c064f52c3314325c705061ef.mesh"
 
 [deps]
 
-files=["res://.godot/imported/coffin.obj-db48d5a72f8d2a53817eed23a547271d.mesh"]
+files=["res://.godot/imported/coffin.obj-f931d880c064f52c3314325c705061ef.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/coffin.obj"
-dest_files=["res://.godot/imported/coffin.obj-db48d5a72f8d2a53817eed23a547271d.mesh", "res://.godot/imported/coffin.obj-db48d5a72f8d2a53817eed23a547271d.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/coffin.obj"
+dest_files=["res://.godot/imported/coffin.obj-f931d880c064f52c3314325c705061ef.mesh", "res://.godot/imported/coffin.obj-f931d880c064f52c3314325c705061ef.mesh"]
 
 [params]
 

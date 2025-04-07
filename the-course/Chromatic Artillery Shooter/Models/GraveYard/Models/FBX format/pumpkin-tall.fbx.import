@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b6u2kb2mxg3k4"
-path="res://.godot/imported/pumpkin-tall.fbx-584ab6a9276da1fcaf200d6159c42b3d.scn"
+path="res://.godot/imported/pumpkin-tall.fbx-bda0b2685619c84cef92a40c1bd4ce4a.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/pumpkin-tall.fbx"
-dest_files=["res://.godot/imported/pumpkin-tall.fbx-584ab6a9276da1fcaf200d6159c42b3d.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/pumpkin-tall.fbx"
+dest_files=["res://.godot/imported/pumpkin-tall.fbx-bda0b2685619c84cef92a40c1bd4ce4a.scn"]
 
 [params]
 

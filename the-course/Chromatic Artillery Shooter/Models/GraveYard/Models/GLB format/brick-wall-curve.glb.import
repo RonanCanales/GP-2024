@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://uoxwwih36d"
-path="res://.godot/imported/brick-wall-curve.glb-ae8e703a67b892b578dd8a3c2d9150bf.scn"
+path="res://.godot/imported/brick-wall-curve.glb-71417f77c77cc5d283bb9b99c64a7e44.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/brick-wall-curve.glb"
-dest_files=["res://.godot/imported/brick-wall-curve.glb-ae8e703a67b892b578dd8a3c2d9150bf.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/brick-wall-curve.glb"
+dest_files=["res://.godot/imported/brick-wall-curve.glb-71417f77c77cc5d283bb9b99c64a7e44.scn"]
 
 [params]
 

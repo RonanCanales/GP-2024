@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8w7em4b31ikt"
-path="res://.godot/imported/candle-multiple.fbx-01231f2f281ed071eb481b8779ed7712.scn"
+path="res://.godot/imported/candle-multiple.fbx-944d7f01c2330524fba452ff8942844c.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/candle-multiple.fbx"
-dest_files=["res://.godot/imported/candle-multiple.fbx-01231f2f281ed071eb481b8779ed7712.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/candle-multiple.fbx"
+dest_files=["res://.godot/imported/candle-multiple.fbx-944d7f01c2330524fba452ff8942844c.scn"]
 
 [params]
 

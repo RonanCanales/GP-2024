@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cf5xqbdrjkqnh"
-path="res://.godot/imported/gravestone-roof.fbx-9241cd2b68921fa76a4adedae8c47c08.scn"
+path="res://.godot/imported/gravestone-roof.fbx-ad0419a63f8da67e5854410f9235c774.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/gravestone-roof.fbx"
-dest_files=["res://.godot/imported/gravestone-roof.fbx-9241cd2b68921fa76a4adedae8c47c08.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/gravestone-roof.fbx"
+dest_files=["res://.godot/imported/gravestone-roof.fbx-ad0419a63f8da67e5854410f9235c774.scn"]
 
 [params]
 

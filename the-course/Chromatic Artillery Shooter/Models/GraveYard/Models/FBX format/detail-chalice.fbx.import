@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bthp4hretrh6s"
-path="res://.godot/imported/detail-chalice.fbx-6be9499de92e5815c54ba935794ed391.scn"
+path="res://.godot/imported/detail-chalice.fbx-80a28f0cab99751b2b49ce77ae5e4f0a.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/detail-chalice.fbx"
-dest_files=["res://.godot/imported/detail-chalice.fbx-6be9499de92e5815c54ba935794ed391.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/detail-chalice.fbx"
+dest_files=["res://.godot/imported/detail-chalice.fbx-80a28f0cab99751b2b49ce77ae5e4f0a.scn"]
 
 [params]
 

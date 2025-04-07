@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cta6schkg10kh"
-path="res://.godot/imported/gravestone-flat-open.glb-01c87cb90a622f75af3d45e091f7f730.scn"
+path="res://.godot/imported/gravestone-flat-open.glb-f934cd6af45250cfcd2f875c8a2bd836.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/gravestone-flat-open.glb"
-dest_files=["res://.godot/imported/gravestone-flat-open.glb-01c87cb90a622f75af3d45e091f7f730.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-flat-open.glb"
+dest_files=["res://.godot/imported/gravestone-flat-open.glb-f934cd6af45250cfcd2f875c8a2bd836.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cj4hbwnwm0fwl"
-path="res://.godot/imported/altar-wood.fbx-50ea01607159ef062c1d62eb5911cedf.scn"
+path="res://.godot/imported/altar-wood.fbx-3104529bf24ad43bdc548f151413aa3c.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/FBX format/altar-wood.fbx"
-dest_files=["res://.godot/imported/altar-wood.fbx-50ea01607159ef062c1d62eb5911cedf.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/FBX format/altar-wood.fbx"
+dest_files=["res://.godot/imported/altar-wood.fbx-3104529bf24ad43bdc548f151413aa3c.scn"]
 
 [params]
 

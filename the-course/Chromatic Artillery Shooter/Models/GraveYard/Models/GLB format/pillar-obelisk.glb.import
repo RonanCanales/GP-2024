@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bnq2ee7g4op"
-path="res://.godot/imported/pillar-obelisk.glb-d448bd69fc40f50a845df31099decf1e.scn"
+path="res://.godot/imported/pillar-obelisk.glb-7733fec8108c790aefeb04ca5fe4fc05.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/pillar-obelisk.glb"
-dest_files=["res://.godot/imported/pillar-obelisk.glb-d448bd69fc40f50a845df31099decf1e.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pillar-obelisk.glb"
+dest_files=["res://.godot/imported/pillar-obelisk.glb-7733fec8108c790aefeb04ca5fe4fc05.scn"]
 
 [params]
 

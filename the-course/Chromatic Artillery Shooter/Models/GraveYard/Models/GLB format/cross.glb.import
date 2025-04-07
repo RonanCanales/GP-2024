@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c1aqavfqv070f"
-path="res://.godot/imported/cross.glb-32f5a3c7a88376c534fa8d492bd8a269.scn"
+path="res://.godot/imported/cross.glb-db04168534f46ad32a0cbb1cde559ea9.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/cross.glb"
-dest_files=["res://.godot/imported/cross.glb-32f5a3c7a88376c534fa8d492bd8a269.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/cross.glb"
+dest_files=["res://.godot/imported/cross.glb-db04168534f46ad32a0cbb1cde559ea9.scn"]
 
 [params]
 

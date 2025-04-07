@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://psm7eq7aobh5"
-path="res://.godot/imported/altar-wood.obj-aa346932f71778f90150c4b903b495af.mesh"
+path="res://.godot/imported/altar-wood.obj-49f11acbba3bee2855ee5569a3967a81.mesh"
 
 [deps]
 
-files=["res://.godot/imported/altar-wood.obj-aa346932f71778f90150c4b903b495af.mesh"]
+files=["res://.godot/imported/altar-wood.obj-49f11acbba3bee2855ee5569a3967a81.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/altar-wood.obj"
-dest_files=["res://.godot/imported/altar-wood.obj-aa346932f71778f90150c4b903b495af.mesh", "res://.godot/imported/altar-wood.obj-aa346932f71778f90150c4b903b495af.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/altar-wood.obj"
+dest_files=["res://.godot/imported/altar-wood.obj-49f11acbba3bee2855ee5569a3967a81.mesh", "res://.godot/imported/altar-wood.obj-49f11acbba3bee2855ee5569a3967a81.mesh"]
 
 [params]
 

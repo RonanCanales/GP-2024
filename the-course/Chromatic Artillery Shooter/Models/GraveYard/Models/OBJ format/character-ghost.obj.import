@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://q6umfw468n6e"
-path="res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"
+path="res://.godot/imported/character-ghost.obj-f93fd07408f417cc6cfd182e2100b97b.mesh"
 
 [deps]
 
-files=["res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"]
+files=["res://.godot/imported/character-ghost.obj-f93fd07408f417cc6cfd182e2100b97b.mesh"]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/character-ghost.obj"
-dest_files=["res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh", "res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/character-ghost.obj"
+dest_files=["res://.godot/imported/character-ghost.obj-f93fd07408f417cc6cfd182e2100b97b.mesh", "res://.godot/imported/character-ghost.obj-f93fd07408f417cc6cfd182e2100b97b.mesh"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dkf6mai1ru0bs"
-path="res://.godot/imported/pumpkin-tall.glb-2c4108e3604a5c26e7b7e1b205bc8813.scn"
+path="res://.godot/imported/pumpkin-tall.glb-5aed12ec2f6d5eb3975842e717942e61.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/pumpkin-tall.glb"
-dest_files=["res://.godot/imported/pumpkin-tall.glb-2c4108e3604a5c26e7b7e1b205bc8813.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pumpkin-tall.glb"
+dest_files=["res://.godot/imported/pumpkin-tall.glb-5aed12ec2f6d5eb3975842e717942e61.scn"]
 
 [params]
 

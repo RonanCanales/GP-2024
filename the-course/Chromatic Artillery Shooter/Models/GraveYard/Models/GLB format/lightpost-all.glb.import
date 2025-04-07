@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://j42uqr37oocq"
-path="res://.godot/imported/lightpost-all.glb-d93fd8233b81796f4c015a34472699ec.scn"
+path="res://.godot/imported/lightpost-all.glb-2e7d51cf3ee6fa7e165a5abda0bc52d6.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/lightpost-all.glb"
-dest_files=["res://.godot/imported/lightpost-all.glb-d93fd8233b81796f4c015a34472699ec.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/lightpost-all.glb"
+dest_files=["res://.godot/imported/lightpost-all.glb-2e7d51cf3ee6fa7e165a5abda0bc52d6.scn"]
 
 [params]
 

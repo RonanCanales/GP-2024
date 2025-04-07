@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://conoke2y6odhy"
-path="res://.godot/imported/gravestone-broken.glb-71c0cc7448e633e73ae3e4808420ccb9.scn"
+path="res://.godot/imported/gravestone-broken.glb-6631379551dd9262895bfeb081cd70e9.scn"
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/GLB format/gravestone-broken.glb"
-dest_files=["res://.godot/imported/gravestone-broken.glb-71c0cc7448e633e73ae3e4808420ccb9.scn"]
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-broken.glb"
+dest_files=["res://.godot/imported/gravestone-broken.glb-6631379551dd9262895bfeb081cd70e9.scn"]
 
 [params]
 
