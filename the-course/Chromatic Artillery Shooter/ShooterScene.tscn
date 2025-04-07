@@ -1,4 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://csxe6jkx87nwg"]
+[gd_scene load_steps=7 format=3 uid="uid://csxe6jkx87nwg"]
+
+[ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_fue6y"]
+sky_material = SubResource("ProceduralSkyMaterial_uqwba")
+
+[sub_resource type="Environment" id="Environment_nklki"]
+background_mode = 2
+sky = SubResource("Sky_fue6y")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jyxj8"]
 
@@ -7,11 +22,19 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="Node3D" type="Node3D"]
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_nklki")
+
 [node name="Ground" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.0043335, 0, 0, 0, 1, 0, 0, 0)
 size = Vector3(20, 1, 20)
 
 [node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_75jxw")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.932068, 0)
