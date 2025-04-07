@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpwun0n1s252s"]
+
+[ext_resource type="PackedScene" uid="uid://cf4yajp4dsdq6" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-wide.glb" id="1_uw7rt"]
+[ext_resource type="Texture2D" uid="uid://oggdqluni0t" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/Textures/colormap.png" id="2_3obg2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hki7o"]
+albedo_texture = ExtResource("2_3obg2")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8t5hb"]
+points = PackedVector3Array(-7.70092e-05, 0.4897, 0.0673424, 0.393311, 0.0580968, 0.1079, 0.0589813, 0.487303, 0.0673424, -7.70092e-05, 0.4897, -0.0673636, -0.0590583, 0.487303, 0.0673424, -0.393311, 0.0580968, 0.1079, 0.393311, 0, 0.1079, 0.393311, 0.0580968, -0.1079, 0.341337, 0.406677, 0.0673424, 0.287746, 0.431699, 0.0673424, 0.232383, 0.452407, 0.0673424, 0.175635, 0.468609, 0.0673424, 0.117655, 0.480305, 0.0673424, 0.0589813, 0.487303, -0.0673636, -0.393311, 0.0580968, -0.1079, -0.0590583, 0.487303, -0.0673636, -0.117732, 0.480305, 0.0673424, -0.175712, 0.468609, 0.0673424, -0.232537, 0.452407, 0.0673424, -0.287823, 0.431699, 0.0673424, -0.341414, 0.406677, 0.0673424, -0.393311, 0, 0.1079, 0.393311, 0, -0.1079, 0.287746, 0.431699, -0.0673636, 0.341337, 0.406677, -0.0673636, 0.117655, 0.480305, -0.0673636, 0.175635, 0.468609, -0.0673636, 0.232383, 0.452407, -0.0673636, -0.393311, 0, -0.1079, -0.341414, 0.406677, -0.0673636, -0.287823, 0.431699, -0.0673636, -0.232537, 0.452407, -0.0673636, -0.175712, 0.468609, -0.0673636, -0.117732, 0.480305, -0.0673636)
+
+[node name="gravestone-wide2" instance=ExtResource("1_uw7rt")]
+
+[node name="gravestone-wide" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_hki7o")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="gravestone-wide" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gravestone-wide/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_8t5hb")
