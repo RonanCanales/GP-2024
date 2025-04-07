@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://7aaykysf7bha"]
+[gd_scene load_steps=19 format=3 uid="uid://7aaykysf7bha"]
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
@@ -8,6 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://b1gd01wlquwhl" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/brick_wall_2.tscn" id="6_lgynb"]
 [ext_resource type="PackedScene" uid="uid://b18daexynjftx" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/grave_2.tscn" id="7_6iwkb"]
 [ext_resource type="PackedScene" uid="uid://hellx2hfs4y4" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/gravestone_round_2.tscn" id="8_84wvl"]
+[ext_resource type="PackedScene" uid="uid://ddgrxdvt3ifow" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/iron_fence_2.tscn" id="9_sb6dl"]
+[ext_resource type="PackedScene" uid="uid://cnddqip48lnot" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/iron-fence-damaged.glb" id="10_6kiw1"]
+[ext_resource type="PackedScene" uid="uid://b3xabdte3ei21" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/iron_fence_border_column_2.tscn" id="11_p8538"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -176,13 +179,13 @@ transform = Transform3D(-6.152e-08, 0, -1.40741, 0, 1.40741, 0, 1.40741, 0, -6.1
 transform = Transform3D(-6.152e-08, 0, -1.40741, 0, 1.40741, 0, 1.40741, 0, -6.152e-08, 7.2573, 0.00555965, 5.54108)
 
 [node name="Grave" type="Node3D" parent="."]
-transform = Transform3D(1.0611, 0, 0, 0, 1.0611, 0, 0, 0, 1.0611, 0, 0, 0)
+transform = Transform3D(1.0611, 0, 0, 0, 1.0611, 0, 0, 0, 1.0611, -8.90716, -1.90735e-06, 1.1999)
 
 [node name="grave2" parent="Grave" instance=ExtResource("7_6iwkb")]
-transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -16.7639, 0, -2.46152)
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, -2.46152)
 
 [node name="grave3" parent="Grave" instance=ExtResource("7_6iwkb")]
-transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -19.9959, 0, -2.46152)
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -17.7005, 0, -2.46152)
 
 [node name="grave4" parent="Grave" instance=ExtResource("7_6iwkb")]
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0, -2.46152)
@@ -191,13 +194,220 @@ transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0
 transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, -2.46152)
 
 [node name="gravestone-round2" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-1.50114, 0, -1.31234e-07, 0, 1.50114, 0, 1.31234e-07, 0, -1.50114, -16.9945, 0.0280145, -1.27954)
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, -0.53485)
 
 [node name="gravestone-round3" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-1.50114, 0, -1.31234e-07, 0, 1.50114, 0, 1.31234e-07, 0, -1.50114, -18.9945, 0.0280145, -1.27954)
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, -0.53485)
 
 [node name="gravestone-round4" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-1.50114, 0, -1.31234e-07, 0, 1.50114, 0, 1.31234e-07, 0, -1.50114, -20.9945, 0.0280145, -1.27954)
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, -0.53485)
 
 [node name="gravestone-round5" parent="Grave" instance=ExtResource("8_84wvl")]
-transform = Transform3D(-1.50114, 0, -1.31234e-07, 0, 1.50114, 0, 1.31234e-07, 0, -1.50114, -22.9945, 0.0280145, -1.27954)
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, -0.53485)
+
+[node name="grave6" parent="Grave" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, 4.41787)
+
+[node name="grave7" parent="Grave" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -17.7005, 0, 4.41787)
+
+[node name="grave8" parent="Grave" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0, 4.41787)
+
+[node name="grave9" parent="Grave" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, 4.41787)
+
+[node name="gravestone-round6" parent="Grave" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, 6.34454)
+
+[node name="gravestone-round7" parent="Grave" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, 6.34454)
+
+[node name="gravestone-round8" parent="Grave" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, 6.34454)
+
+[node name="gravestone-round9" parent="Grave" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, 6.34454)
+
+[node name="Fences" type="Node3D" parent="Grave"]
+transform = Transform3D(-9.87969e-08, 0, -2.26021, 0, 2.26021, 0, 2.26021, 0, -9.87969e-08, -11.3193, 1.79752e-06, -2.57868)
+
+[node name="iron-fence2" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, -4.50686e-09, -2.32959e-10, 4.50686e-09, 0.994671, 0.103105, -2.32962e-10, -0.103105, 0.994671, 0, 0, 0.0425692)
+
+[node name="iron-fence4" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 7.24456e-09, -6.04533e-10, -7.24456e-09, 0.98617, -0.165736, -6.04523e-10, 0.165736, 0.98617, 1.98419, -0.0741225, 0)
+
+[node name="iron-fence6" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 5.06423e-09, -2.94357e-10, -5.06423e-09, 0.993266, -0.115856, -2.94353e-10, 0.115856, 0.993266, 3.92386, -0.0612999, -0.0265341)
+
+[node name="iron-fence7" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.92367, 0, 0)
+
+[node name="iron-fence-damaged2" parent="Grave/Fences" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-0.994905, -8.69773e-08, 3.8019e-15, 0, -4.34887e-08, -0.994905, 8.69773e-08, -0.994905, 4.34887e-08, 2.92976, -0.428969, -0.453991)
+
+[node name="iron-fence5" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, -2.51998e-08, -7.99505e-09, 2.51998e-08, 0.817095, 0.576504, -7.99505e-09, -0.576504, 0.817095, 0.0868345, 0.240082, 8.94962)
+
+[node name="iron-fence13" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 7.24456e-09, -6.04537e-10, -7.24456e-09, 0.98617, -0.165736, -6.04523e-10, 0.165736, 0.98617, 1.14464, -0.0741225, 8.90705)
+
+[node name="iron-fence14" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 5.06423e-09, -2.9436e-10, -5.06423e-09, 0.993266, -0.115856, -2.94353e-10, 0.115856, 0.993266, 3.08431, -0.0612999, 8.88052)
+
+[node name="iron-fence15" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.08412, 0, 8.90705)
+
+[node name="iron-fence-damaged6" parent="Grave/Fences" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-0.994905, -8.69773e-08, 3.8019e-15, 0, -4.34887e-08, -0.994905, 8.69773e-08, -0.994905, 4.34887e-08, 2.09021, -0.428969, 8.57633)
+
+[node name="iron-fence-damaged4" parent="Grave/Fences" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-4.34887e-08, 0.994905, -4.34887e-08, 0, -4.34887e-08, -0.994905, -0.994905, -4.34887e-08, 1.90095e-15, 5.50752, -0.428969, 1.01681)
+
+[node name="iron-fence-damaged5" parent="Grave/Fences" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-4.34887e-08, 0.994905, -4.34887e-08, 0, -4.34887e-08, -0.994905, -0.994905, -4.34887e-08, 1.90095e-15, 5.50753, -0.428969, 2.94141)
+
+[node name="iron-fence-damaged3" parent="Grave/Fences" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-0.994905, -8.69773e-08, -3.8019e-15, 0, -4.34887e-08, 0.994905, -8.69773e-08, 0.994905, 4.34887e-08, 0.934512, 0.44788, -0.392355)
+
+[node name="iron-fence3" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928e-08, 6.00509, 0, 1.95568)
+
+[node name="iron-fence8" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.291308, 0.951401, 1.48134e-15, 0.951401, 0.291308, -0.995, 1.27335e-08, -4.15871e-08, 6.0051, 0.105055, 3.94803)
+
+[node name="iron-fence9" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.258816, 0.960749, 1.48134e-15, 0.960749, 0.258816, -0.995, 1.13132e-08, -4.19957e-08, 6.00174, 0.0758991, 4.93043)
+
+[node name="iron-fence10" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, 0.513326, 0.852362, -5.92535e-15, 0.852362, -0.513326, -0.995, -2.24382e-08, -3.72579e-08, 6.0051, -0.261991, 5.87865)
+
+[node name="iron-fence11" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.234422, 0.966991, 7.40669e-16, 0.966991, 0.234422, -0.995, 1.02469e-08, -4.22685e-08, 6.0051, 0.0452341, 6.87276)
+
+[node name="iron-fence12" parent="Grave/Fences" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.318434, 0.942669, 2.22201e-15, 0.942669, 0.318434, -0.995, 1.39192e-08, -4.12054e-08, 6.0051, 0.0452341, 7.85293)
+
+[node name="iron-fence-border-column2" parent="Grave/Fences" instance=ExtResource("11_p8538")]
+transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928e-08, 5.91866, 9.94109e-08, -0.00435829)
+
+[node name="iron-fence-border-column3" parent="Grave/Fences" instance=ExtResource("11_p8538")]
+transform = Transform3D(0.995, 8.16391e-09, -7.73081e-10, -8.16391e-09, 0.977314, -0.186769, -7.73088e-10, 0.186768, 0.977314, 5.06007, -0.0859546, 8.84391)
+
+[node name="Grave2" type="Node3D" parent="."]
+transform = Transform3D(1.0611, 0, 0, 0, 1.0611, 0, 0, 0, 1.0611, 31.2883, -1.90735e-06, 1.1999)
+
+[node name="grave2" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, -2.46152)
+
+[node name="grave3" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -17.7005, 0, -2.46152)
+
+[node name="grave4" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0, -2.46152)
+
+[node name="grave5" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, -2.46152)
+
+[node name="gravestone-round2" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, -0.53485)
+
+[node name="gravestone-round3" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, -0.53485)
+
+[node name="gravestone-round4" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, -0.53485)
+
+[node name="gravestone-round5" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, -0.53485)
+
+[node name="grave6" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -14.4685, 0, 4.41787)
+
+[node name="grave7" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -17.7005, 0, 4.41787)
+
+[node name="grave8" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -23.2279, 0, 4.41787)
+
+[node name="grave9" parent="Grave2" instance=ExtResource("7_6iwkb")]
+transform = Transform3D(2.81348, 0, 0, 0, 2.81348, 0, 0, 0, 2.81348, -26.4599, 0, 4.41787)
+
+[node name="gravestone-round6" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -14.2773, 0.0280136, 6.34454)
+
+[node name="gravestone-round7" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -17.5724, 0.0280136, 6.34454)
+
+[node name="gravestone-round8" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -23.1629, 0.0280136, 6.34454)
+
+[node name="gravestone-round9" parent="Grave2" instance=ExtResource("8_84wvl")]
+transform = Transform3D(-2.47322, 0, -2.16216e-07, 0, 2.47322, 0, 2.16216e-07, 0, -2.47322, -26.458, 0.0280136, 6.34454)
+
+[node name="Fences2" type="Node3D" parent="Grave2"]
+transform = Transform3D(-9.87969e-08, 0, -2.26021, 0, 2.26021, 0, 2.26021, 0, -9.87969e-08, -11.3193, 1.79752e-06, -2.57868)
+
+[node name="iron-fence2" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, -4.50686e-09, -2.32959e-10, 4.50686e-09, 0.994671, 0.103105, -2.32962e-10, -0.103105, 0.994671, 0.962828, 0, 0.0425692)
+
+[node name="iron-fence4" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 7.24456e-09, -6.04533e-10, -7.24456e-09, 0.98617, -0.165736, -6.04523e-10, 0.165736, 0.98617, 1.98419, -0.0741225, 0)
+
+[node name="iron-fence6" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 5.06423e-09, -2.94357e-10, -5.06423e-09, 0.993266, -0.115856, -2.94353e-10, 0.115856, 0.993266, 3.92386, -0.0612999, -0.0265341)
+
+[node name="iron-fence7" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.92367, 0, 0)
+
+[node name="iron-fence5" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, -2.51998e-08, -7.99505e-09, 2.51998e-08, 0.817095, 0.576504, -7.99505e-09, -0.576504, 0.817095, 0.0868345, 0.240082, 8.94962)
+
+[node name="iron-fence13" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 7.24456e-09, -6.04537e-10, -7.24456e-09, 0.98617, -0.165736, -6.04523e-10, 0.165736, 0.98617, 1.14464, -0.0741225, 8.90705)
+
+[node name="iron-fence14" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 5.06423e-09, -2.9436e-10, -5.06423e-09, 0.993266, -0.115856, -2.94353e-10, 0.115856, 0.993266, 3.08431, -0.0612999, 8.88052)
+
+[node name="iron-fence15" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.08412, 0, 8.90705)
+
+[node name="iron-fence-damaged2" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-0.994905, -6.90488e-08, -3.51844e-08, -3.51844e-08, 0.804925, -0.584748, 6.90488e-08, -0.584748, -0.804925, 2.89066, -0.276126, -0.695806)
+
+[node name="iron-fence-damaged6" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-0.994905, -8.69773e-08, 3.8019e-15, 0, -4.34887e-08, -0.994905, 8.69773e-08, -0.994905, 4.34887e-08, 2.09021, -0.428969, 8.57633)
+
+[node name="iron-fence-damaged4" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-4.34887e-08, -0.538218, 0.836754, 1.18507e-14, 0.836754, 0.538218, -0.994905, 2.35263e-08, -3.65757e-08, 5.94021, 0.267598, 1.01273)
+
+[node name="iron-fence-damaged5" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(-4.34887e-08, 0.723767, 0.68264, -2.96267e-15, 0.68264, -0.723767, -0.994905, -3.16369e-08, -2.98391e-08, 5.82159, -0.344445, 2.94141)
+
+[node name="iron-fence-damaged3" parent="Grave2/Fences2" instance=ExtResource("10_6kiw1")]
+transform = Transform3D(0.994905, 5.51382e-09, -3.50955e-10, -5.51382e-09, 0.986876, -0.126142, -3.50958e-10, 0.126142, 0.986876, -0.0138415, -0.0960015, 0.0177078)
+
+[node name="iron-fence3" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928e-08, 6.00509, 0, 1.95568)
+
+[node name="iron-fence8" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.291308, 0.951401, 1.48134e-15, 0.951401, 0.291308, -0.995, 1.27335e-08, -4.15871e-08, 6.0051, 0.105055, 3.94803)
+
+[node name="iron-fence9" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.258816, 0.960749, 1.48134e-15, 0.960749, 0.258816, -0.995, 1.13132e-08, -4.19957e-08, 6.00174, 0.0758991, 4.93043)
+
+[node name="iron-fence10" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, 0.513326, 0.852362, -5.92535e-15, 0.852362, -0.513326, -0.995, -2.24382e-08, -3.72579e-08, 6.0051, -0.261991, 5.87865)
+
+[node name="iron-fence11" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.234422, 0.966991, 7.40669e-16, 0.966991, 0.234422, -0.995, 1.02469e-08, -4.22685e-08, 6.0051, 0.0452341, 6.87276)
+
+[node name="iron-fence12" parent="Grave2/Fences2" instance=ExtResource("9_sb6dl")]
+transform = Transform3D(-4.34928e-08, -0.318434, 0.942669, 2.22201e-15, 0.942669, 0.318434, -0.995, 1.39192e-08, -4.12054e-08, 6.0051, 0.0452341, 7.85293)
+
+[node name="iron-fence-border-column2" parent="Grave2/Fences2" instance=ExtResource("11_p8538")]
+transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928e-08, 5.91866, 9.94109e-08, -0.00435829)
+
+[node name="iron-fence-border-column3" parent="Grave2/Fences2" instance=ExtResource("11_p8538")]
+transform = Transform3D(0.995, 8.16391e-09, -7.73081e-10, -8.16391e-09, 0.977314, -0.186769, -7.73088e-10, 0.186768, 0.977314, 5.06007, -0.0859546, 8.84391)

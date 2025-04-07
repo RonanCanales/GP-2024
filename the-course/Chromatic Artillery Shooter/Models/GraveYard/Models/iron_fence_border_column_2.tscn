@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3xabdte3ei21"]
+
+[ext_resource type="PackedScene" uid="uid://l6spvjjym3kw" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/iron-fence-border-column.glb" id="1_crgad"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ss33n"]
+size = Vector3(1.00049, 0.824127, 0.102448)
+
+[node name="iron-fence-border-column2" instance=ExtResource("1_crgad")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000244141, 0.413119, -0.449876)
+shape = SubResource("BoxShape3D_ss33n")
