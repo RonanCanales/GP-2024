@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://hellx2hfs4y4"]
+
+[ext_resource type="PackedScene" uid="uid://cfpqlya3eysir" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-round.glb" id="1_lnixe"]
+[ext_resource type="Texture2D" uid="uid://oggdqluni0t" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/Textures/colormap.png" id="2_tfcss"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wqr25"]
+albedo_texture = ExtResource("2_tfcss")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d13tw"]
+points = PackedVector3Array(-0.195, 0, -0.07475, 0.194962, 0, -0.07475, -0.195, 0, 0.07475, -0.195, 0.411435, -0.07475, 0.194962, 0, 0.07475, 0.194962, 0.411435, -0.07475, -0.195, 0.411435, 0.07475, -0.150335, 0.498189, -0.07475, 0.194962, 0.411435, 0.07475, 0.150258, 0.498189, -0.07475, -0.150335, 0.498189, 0.07475, -0.122734, 0.53415, -0.07475, 0.150258, 0.498189, 0.07475, 0.122696, 0.53415, -0.07475, -0.122734, 0.53415, 0.07475, -0.0868109, 0.561694, -0.07475, 0.122696, 0.53415, 0.07475, 0.0867727, 0.561694, -0.07475, -0.0868109, 0.561694, 0.07475, -0.0449325, 0.579045, -0.07475, 0.0867727, 0.561694, 0.07475, 0.0448943, 0.579045, -0.07475, -0.0449325, 0.579045, 0.07475, -3.81619e-05, 0.585, -0.07475, 0.0448943, 0.579045, 0.07475, -3.81619e-05, 0.585, 0.07475)
+
+[node name="gravestone-round2" instance=ExtResource("1_lnixe")]
+
+[node name="gravestone-round" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_wqr25")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="gravestone-round" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="gravestone-round/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_d13tw")

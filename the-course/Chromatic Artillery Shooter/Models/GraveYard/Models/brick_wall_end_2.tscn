@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://kp4oiyeb8bse"]
+
+[ext_resource type="PackedScene" uid="uid://bjh4e1bh0hecq" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/brick-wall-end.glb" id="1_g2i28"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s1vmn"]
+points = PackedVector3Array(-0.30002, 0.8239, -0.31002, 0.5, 0.0899225, -0.320004, 0.30325, 0.537196, -0.327013, 0.5, 0.70188, -0.342929, -0.30002, 0.8239, -0.51, -0.5, 0.8239, -0.31002, -0.30002, -4.74538e-19, -0.31002, 0.5, -4.74538e-19, -0.320004, 0.5, 0.70188, -0.477091, 0.5, 0.0899225, -0.500016, -0.30002, -4.74538e-19, -0.51, -0.5, 0.8239, -0.51, -0.5, -4.74538e-19, -0.31002, 0.5, -4.74538e-19, -0.500016, -0.5, -4.74538e-19, -0.51)
+
+[node name="brick-wall-end2" instance=ExtResource("1_g2i28")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="brick-wall-end" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="brick-wall-end/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_s1vmn")
