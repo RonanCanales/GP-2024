@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dda7p4mgi6rm2"
+path="res://.godot/imported/pumpkin-tall.obj-9337ec76ce2275150347898c3fa8787e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pumpkin-tall.obj-9337ec76ce2275150347898c3fa8787e.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/pumpkin-tall.obj"
+dest_files=["res://.godot/imported/pumpkin-tall.obj-9337ec76ce2275150347898c3fa8787e.mesh", "res://.godot/imported/pumpkin-tall.obj-9337ec76ce2275150347898c3fa8787e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

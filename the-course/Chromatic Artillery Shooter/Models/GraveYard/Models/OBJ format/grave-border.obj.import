@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsd2l0qbw22ie"
+path="res://.godot/imported/grave-border.obj-6e36e7e3f40be0bd27e0fa9aea1ea423.mesh"
+
+[deps]
+
+files=["res://.godot/imported/grave-border.obj-6e36e7e3f40be0bd27e0fa9aea1ea423.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/grave-border.obj"
+dest_files=["res://.godot/imported/grave-border.obj-6e36e7e3f40be0bd27e0fa9aea1ea423.mesh", "res://.godot/imported/grave-border.obj-6e36e7e3f40be0bd27e0fa9aea1ea423.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

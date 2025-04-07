@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://lmgax8kee8vu"
+path="res://.godot/imported/lightpost-single.obj-d3e308708ce24e57a5920e9352e2c766.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lightpost-single.obj-d3e308708ce24e57a5920e9352e2c766.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/lightpost-single.obj"
+dest_files=["res://.godot/imported/lightpost-single.obj-d3e308708ce24e57a5920e9352e2c766.mesh", "res://.godot/imported/lightpost-single.obj-d3e308708ce24e57a5920e9352e2c766.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

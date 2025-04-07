@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://q3a8821y6c1s"
+path="res://.godot/imported/iron-fence-border.obj-9c7f06c42f0a08fee0d64298f0b156cf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/iron-fence-border.obj-9c7f06c42f0a08fee0d64298f0b156cf.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/iron-fence-border.obj"
+dest_files=["res://.godot/imported/iron-fence-border.obj-9c7f06c42f0a08fee0d64298f0b156cf.mesh", "res://.godot/imported/iron-fence-border.obj-9c7f06c42f0a08fee0d64298f0b156cf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

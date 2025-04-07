@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://q6umfw468n6e"
+path="res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/character-ghost.obj"
+dest_files=["res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh", "res://.godot/imported/character-ghost.obj-aaec5b323dbb5b2d4aed72b6f920eaea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

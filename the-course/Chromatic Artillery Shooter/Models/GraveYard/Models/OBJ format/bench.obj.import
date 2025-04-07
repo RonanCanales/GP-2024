@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dl8dexyt3ubpt"
+path="res://.godot/imported/bench.obj-c4fca46edc2c60ed6cba01471ab2e08e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bench.obj-c4fca46edc2c60ed6cba01471ab2e08e.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/bench.obj"
+dest_files=["res://.godot/imported/bench.obj-c4fca46edc2c60ed6cba01471ab2e08e.mesh", "res://.godot/imported/bench.obj-c4fca46edc2c60ed6cba01471ab2e08e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

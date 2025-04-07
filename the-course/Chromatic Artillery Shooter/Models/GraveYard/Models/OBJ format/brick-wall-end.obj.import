@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ba5hwlmhce106"
+path="res://.godot/imported/brick-wall-end.obj-268a2b0266e6f1ad07961cb9c31349d2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/brick-wall-end.obj-268a2b0266e6f1ad07961cb9c31349d2.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/brick-wall-end.obj"
+dest_files=["res://.godot/imported/brick-wall-end.obj-268a2b0266e6f1ad07961cb9c31349d2.mesh", "res://.godot/imported/brick-wall-end.obj-268a2b0266e6f1ad07961cb9c31349d2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

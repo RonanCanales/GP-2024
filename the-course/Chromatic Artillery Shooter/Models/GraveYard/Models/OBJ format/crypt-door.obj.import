@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq48445b38kbt"
+path="res://.godot/imported/crypt-door.obj-d2c8825415631bc8e81eb5eb69bc59fb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt-door.obj-d2c8825415631bc8e81eb5eb69bc59fb.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/crypt-door.obj"
+dest_files=["res://.godot/imported/crypt-door.obj-d2c8825415631bc8e81eb5eb69bc59fb.mesh", "res://.godot/imported/crypt-door.obj-d2c8825415631bc8e81eb5eb69bc59fb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

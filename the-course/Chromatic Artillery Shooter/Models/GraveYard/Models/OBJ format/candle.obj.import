@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bxht1qptv1s2g"
+path="res://.godot/imported/candle.obj-3bedef5a564b9eca3c8991972fcc2458.mesh"
+
+[deps]
+
+files=["res://.godot/imported/candle.obj-3bedef5a564b9eca3c8991972fcc2458.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/candle.obj"
+dest_files=["res://.godot/imported/candle.obj-3bedef5a564b9eca3c8991972fcc2458.mesh", "res://.godot/imported/candle.obj-3bedef5a564b9eca3c8991972fcc2458.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

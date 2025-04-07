@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cn3j0f255bo7j"
+path="res://.godot/imported/stone-wall-damaged.obj-717a14e14cde43dda82bb8cc8ce6aa3e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone-wall-damaged.obj-717a14e14cde43dda82bb8cc8ce6aa3e.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/stone-wall-damaged.obj"
+dest_files=["res://.godot/imported/stone-wall-damaged.obj-717a14e14cde43dda82bb8cc8ce6aa3e.mesh", "res://.godot/imported/stone-wall-damaged.obj-717a14e14cde43dda82bb8cc8ce6aa3e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

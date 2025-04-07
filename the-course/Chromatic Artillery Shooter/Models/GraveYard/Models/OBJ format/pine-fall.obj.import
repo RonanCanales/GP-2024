@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwotjcn406a0b"
+path="res://.godot/imported/pine-fall.obj-3731d8b65f5032df780db605e9554d07.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pine-fall.obj-3731d8b65f5032df780db605e9554d07.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/pine-fall.obj"
+dest_files=["res://.godot/imported/pine-fall.obj-3731d8b65f5032df780db605e9554d07.mesh", "res://.godot/imported/pine-fall.obj-3731d8b65f5032df780db605e9554d07.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

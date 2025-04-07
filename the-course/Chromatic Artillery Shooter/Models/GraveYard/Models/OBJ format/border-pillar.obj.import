@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpl7vqt6tow42"
+path="res://.godot/imported/border-pillar.obj-ca5a350785145ec0817f946d94bc9c0c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/border-pillar.obj-ca5a350785145ec0817f946d94bc9c0c.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/border-pillar.obj"
+dest_files=["res://.godot/imported/border-pillar.obj-ca5a350785145ec0817f946d94bc9c0c.mesh", "res://.godot/imported/border-pillar.obj-ca5a350785145ec0817f946d94bc9c0c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

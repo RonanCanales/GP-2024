@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bl8ynwsgsgiti"
+path="res://.godot/imported/gravestone-bevel.obj-06fed0be0d644bd830fb0da61fa031fa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestone-bevel.obj-06fed0be0d644bd830fb0da61fa031fa.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/gravestone-bevel.obj"
+dest_files=["res://.godot/imported/gravestone-bevel.obj-06fed0be0d644bd830fb0da61fa031fa.mesh", "res://.godot/imported/gravestone-bevel.obj-06fed0be0d644bd830fb0da61fa031fa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

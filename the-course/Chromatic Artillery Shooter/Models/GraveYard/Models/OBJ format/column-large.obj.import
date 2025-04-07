@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsky7l6kujkqg"
+path="res://.godot/imported/column-large.obj-d9c34d15c843c67008f5bbdf89879e95.mesh"
+
+[deps]
+
+files=["res://.godot/imported/column-large.obj-d9c34d15c843c67008f5bbdf89879e95.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/kenney_graveyard-kit/Models/OBJ format/column-large.obj"
+dest_files=["res://.godot/imported/column-large.obj-d9c34d15c843c67008f5bbdf89879e95.mesh", "res://.godot/imported/column-large.obj-d9c34d15c843c67008f5bbdf89879e95.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

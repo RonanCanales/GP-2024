@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://86obrhmidbo4"
+path="res://.godot/imported/gravestone-broken.obj-4e878d0c0b1bec6e96e52fe7ec72d8a2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestone-broken.obj-4e878d0c0b1bec6e96e52fe7ec72d8a2.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/gravestone-broken.obj"
+dest_files=["res://.godot/imported/gravestone-broken.obj-4e878d0c0b1bec6e96e52fe7ec72d8a2.mesh", "res://.godot/imported/gravestone-broken.obj-4e878d0c0b1bec6e96e52fe7ec72d8a2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

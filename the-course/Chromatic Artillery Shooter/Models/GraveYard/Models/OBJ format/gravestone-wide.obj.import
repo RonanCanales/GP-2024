@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmrd2tchtd0cv"
+path="res://.godot/imported/gravestone-wide.obj-b7ce30103fd88b493cf973dbcaa2d36e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestone-wide.obj-b7ce30103fd88b493cf973dbcaa2d36e.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/gravestone-wide.obj"
+dest_files=["res://.godot/imported/gravestone-wide.obj-b7ce30103fd88b493cf973dbcaa2d36e.mesh", "res://.godot/imported/gravestone-wide.obj-b7ce30103fd88b493cf973dbcaa2d36e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

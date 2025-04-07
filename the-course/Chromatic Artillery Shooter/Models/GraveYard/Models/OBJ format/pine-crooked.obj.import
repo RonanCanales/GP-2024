@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ri0x7ptc4v60"
+path="res://.godot/imported/pine-crooked.obj-b5cb5a26bf617a35d41ceb49ec39a95f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pine-crooked.obj-b5cb5a26bf617a35d41ceb49ec39a95f.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/pine-crooked.obj"
+dest_files=["res://.godot/imported/pine-crooked.obj-b5cb5a26bf617a35d41ceb49ec39a95f.mesh", "res://.godot/imported/pine-crooked.obj-b5cb5a26bf617a35d41ceb49ec39a95f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

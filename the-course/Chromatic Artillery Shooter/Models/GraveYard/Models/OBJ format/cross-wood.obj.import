@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c06jwdndj1144"
+path="res://.godot/imported/cross-wood.obj-387616e842dc3ceb46b70649a6f90680.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cross-wood.obj-387616e842dc3ceb46b70649a6f90680.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/cross-wood.obj"
+dest_files=["res://.godot/imported/cross-wood.obj-387616e842dc3ceb46b70649a6f90680.mesh", "res://.godot/imported/cross-wood.obj-387616e842dc3ceb46b70649a6f90680.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

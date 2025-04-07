@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bopw3po7f1a1x"
+path="res://.godot/imported/rocks-tall.obj-869e4826b5a3614643578ae905346ad0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rocks-tall.obj-869e4826b5a3614643578ae905346ad0.mesh"]
+
+source_file="res://Chromatic Artillery Shooter/Models/GraveYard/Models/OBJ format/rocks-tall.obj"
+dest_files=["res://.godot/imported/rocks-tall.obj-869e4826b5a3614643578ae905346ad0.mesh", "res://.godot/imported/rocks-tall.obj-869e4826b5a3614643578ae905346ad0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
