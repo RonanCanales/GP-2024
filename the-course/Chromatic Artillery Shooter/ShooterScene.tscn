@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://csxe6jkx87nwg"]
+[gd_scene load_steps=12 format=3 uid="uid://csxe6jkx87nwg"]
 
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
 
@@ -16,6 +16,18 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ooqnc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gu3qr"]
+albedo_color = Color(1, 0.521569, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vciyh"]
+size = Vector3(0.632202, 1, 17.7312)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a1see"]
+size = Vector3(0.606445, 1, 17.7841)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i1cwb"]
+size = Vector3(0.604141, 0.806152, 17.4646)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jyxj8"]
 
@@ -39,6 +51,50 @@ size = Vector3(20, 0, 20)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D"]
 shape = SubResource("WorldBoundaryShape3D_ooqnc")
+
+[node name="Walls" type="CSGBox3D" parent="."]
+transform = Transform3D(1.13269, 0, 0, 0, -3.41437, 0, 0, 0, 1.13269, -9.63099, 0.909965, 0.0231612)
+material_override = SubResource("StandardMaterial3D_gu3qr")
+size = Vector3(0.602051, 0.544891, 17.6709)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999984, 0, 0, 0, 1, -0.0297232, 0, -0.0789702)
+shape = SubResource("BoxShape3D_vciyh")
+
+[node name="Walls2" type="CSGBox3D" parent="."]
+transform = Transform3D(1.13269, 0, 0, 0, -3.41437, 0, 0, 0, 1.13269, 9.66801, 0.93504, 0.0231612)
+material_override = SubResource("StandardMaterial3D_gu3qr")
+size = Vector3(0.602051, 0.544891, 17.6709)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999982, 0, 0, 0, 1, 0.0131884, 0, -0.137265)
+shape = SubResource("BoxShape3D_a1see")
+
+[node name="Walls3" type="CSGBox3D" parent="."]
+transform = Transform3D(4.95114e-08, 0, -1.13269, 0, -3.41437, 0, 1.13269, 0, 4.95114e-08, -0.00506783, 0.93504, -9.91955)
+material_override = SubResource("StandardMaterial3D_gu3qr")
+size = Vector3(0.602051, 0.544891, 17.6709)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls3/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999933, 0, 0, 0, 1, -0.0332909, 0.0969238, -0.0872809)
+shape = SubResource("BoxShape3D_i1cwb")
+
+[node name="Walls4" type="CSGBox3D" parent="."]
+transform = Transform3D(4.95114e-08, 0, -1.13269, 0, -3.41437, 0, 1.13269, 0, 4.95114e-08, -0.00506783, 0.93504, 9.68608)
+material_override = SubResource("StandardMaterial3D_gu3qr")
+size = Vector3(0.602051, 0.544891, 17.6709)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls4/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999933, 0, 0, 0, 1, -0.0332909, 0.0969238, -0.0872809)
+shape = SubResource("BoxShape3D_i1cwb")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0889175, 0)
