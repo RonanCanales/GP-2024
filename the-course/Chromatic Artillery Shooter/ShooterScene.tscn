@@ -43,3 +43,8 @@ mesh = SubResource("CapsuleMesh_jyxj8")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.932068, 0)
 shape = SubResource("ConvexPolygonShape3D_d6xps")
+
+[node name="Head" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49375, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head"]
