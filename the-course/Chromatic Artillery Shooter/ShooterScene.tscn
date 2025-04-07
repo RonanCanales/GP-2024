@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://csxe6jkx87nwg"]
+[gd_scene load_steps=14 format=3 uid="uid://csxe6jkx87nwg"]
 
+[ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
@@ -14,6 +15,10 @@ background_mode = 2
 sky = SubResource("Sky_fue6y")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7geoi"]
+albedo_texture = ExtResource("1_1amjg")
+uv1_triplanar = true
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ooqnc"]
 
@@ -45,7 +50,8 @@ environment = SubResource("Environment_nklki")
 
 [node name="Ground" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1.38755, 0, 0, 0, 1, 0, 0, 0)
-size = Vector3(20, 0, 20)
+material_override = SubResource("StandardMaterial3D_7geoi")
+size = Vector3(100, 0, 100)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Ground"]
 
@@ -86,7 +92,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999933, 0, 0, 0, 1, -0.0332909, 0.0969238,
 shape = SubResource("BoxShape3D_i1cwb")
 
 [node name="Walls4" type="CSGBox3D" parent="."]
-transform = Transform3D(4.95114e-08, 0, -1.13269, 0, -3.41437, 0, 1.13269, 0, 4.95114e-08, -0.00506783, 0.93504, 9.68608)
+transform = Transform3D(4.95114e-08, 0, -1.13269, 0, -3.41437, 0, 1.13269, 0, 4.95114e-08, 0.0319662, 0.93504, 9.64705)
 material_override = SubResource("StandardMaterial3D_gu3qr")
 size = Vector3(0.602051, 0.544891, 17.6709)
 
