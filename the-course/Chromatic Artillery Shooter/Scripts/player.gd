@@ -15,6 +15,7 @@ var gravity = 9.8
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var damage_flash = $CanvasLayer/Damage
+@onready var gun_anim = $"Head/Camera3D/Water gun (1)/AnimationPlayer"
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -27,23 +28,22 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
+	
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Handle Sprint
+	
 	if Input.is_action_pressed("sprint"):
 		speed = SPRINT_SPEED
 	else:
 		speed = WALK_SPEED
 
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
+	
 	var input_dir := Input.get_vector("left", "right", "forward", "back")
 	var direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if is_on_floor():
@@ -57,9 +57,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = lerp(velocity.x, direction.x * speed, delta * 2.0)
 		velocity.z = lerp(velocity.z, direction.z * speed, delta * 2.0)
  
-   #Head bobble
+
 	t_bob += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = _headbob(t_bob)
+
+	if Input.is_action_just_pressed("shoot"):
+		if !gun_anim.is_playing():
+			gun_anim.play("Shoot")
 
 	move_and_slide()
 

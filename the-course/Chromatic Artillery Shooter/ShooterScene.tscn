@@ -1,7 +1,9 @@
-[gd_scene load_steps=35 format=4 uid="uid://7aaykysf7bha"]
+[gd_scene load_steps=36 format=4 uid="uid://7aaykysf7bha"]
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
+[ext_resource type="Script" path="res://Chromatic Artillery Shooter/World.gd" id="1_quc7d"]
+[ext_resource type="PackedScene" uid="uid://dv47hml1ksr85" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/water_gun_.tscn" id="3_vvyyx"]
 [ext_resource type="PackedScene" uid="uid://cvdmqqllp3hor" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/road_2.tscn" id="4_qe8dd"]
 [ext_resource type="PackedScene" uid="uid://c5mofqqbmki66" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pine.glb" id="5_01tt5"]
 [ext_resource type="PackedScene" uid="uid://kp4oiyeb8bse" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/brick_wall_end_2.tscn" id="5_2uk5i"]
@@ -21,7 +23,6 @@
 [ext_resource type="Shader" path="res://addons/simplegrasstextured/shaders/grass.gdshader" id="18_c1rds"]
 [ext_resource type="Texture2D" uid="uid://c4ggdp0kg5wjk" path="res://addons/simplegrasstextured/textures/grassbushcc008.png" id="19_kh5br"]
 [ext_resource type="Script" path="res://addons/simplegrasstextured/grass.gd" id="20_1kb0i"]
-[ext_resource type="PackedScene" uid="uid://bsrmu47kqg1ug" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/enemy.tscn" id="22_2ma0l"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -110,7 +111,8 @@ uv1_triplanar = true
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ooqnc"]
 
-[node name="Node3D" type="Node3D"]
+[node name="World" type="Node3D"]
+script = ExtResource("1_quc7d")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152.378, 139.28, -109.993)
@@ -135,6 +137,9 @@ shape = SubResource("CapsuleShape3D_o5ltu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49375, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="Water gun (1)" parent="Player/Head/Camera3D" instance=ExtResource("3_vvyyx")]
+transform = Transform3D(-7.21053e-08, 0, 1.64958, 0, 1.64958, 0, -1.64958, 0, -7.21053e-08, -0.297899, -0.42517, -0.843554)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player"]
 
@@ -2251,6 +2256,61 @@ transform = Transform3D(-4.34928e-08, 0, 0.995, 0, 0.995, 0, -0.995, 0, -4.34928
 [node name="iron-fence-border-column3" parent="NavigationRegion3D/Map/Grave2/Fences2" instance=ExtResource("11_p8538")]
 transform = Transform3D(0.995, 8.16391e-09, -7.73081e-10, -8.16391e-09, 0.977314, -0.186769, -7.73088e-10, 0.186768, 0.977314, 5.06007, -0.0859546, 8.84391)
 
-[node name="Enemy" parent="." instance=ExtResource("22_2ma0l")]
-transform = Transform3D(1.628, 0, 0, 0, 1.628, 0, 0, 0, 1.628, -17.6387, 0.447335, 7.00968)
-player_path = NodePath("../Player")
+[node name="Spawns" type="Node3D" parent="."]
+
+[node name="Spawns" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34065, 0, -7.16389)
+
+[node name="Spawns2" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99579, 0, -7.16389)
+
+[node name="Spawns3" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1633, 0, -7.16389)
+
+[node name="Spawns4" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.0638, 0, -7.16389)
+
+[node name="Spawns5" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6406, 0, 5.14753)
+
+[node name="Spawns6" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8986, 0, 14.7923)
+
+[node name="Spawns7" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.979, 0, 17.4826)
+
+[node name="Spawns8" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.57929, 0, 17.4826)
+
+[node name="Spawns9" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1862, 0, 15.3622)
+
+[node name="Spawns10" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.691473, 0.503042, 13.9063)
+
+[node name="Spawns11" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.18164, 0.503042, 10.8741)
+
+[node name="Spawns12" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.1094, 0.503042, 9.06022)
+
+[node name="Spawns13" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2834, 0.503042, 9.06022)
+
+[node name="Spawns14" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2834, 0.503042, -7.31348)
+
+[node name="Spawns15" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9255, 0.503042, -7.31348)
+
+[node name="Spawns16" type="Node3D" parent="Spawns"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.2346, 0.503042, -7.31348)
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="Water gun (1)" parent="." instance=ExtResource("3_vvyyx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1234, 2.17827e-07, -8.65177)
+
+[connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
