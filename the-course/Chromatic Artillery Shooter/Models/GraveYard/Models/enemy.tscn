@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bsrmu47kqg1ug"]
+[gd_scene load_steps=20 format=3 uid="uid://bsrmu47kqg1ug"]
 
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/enemy.gd" id="1_qdye5"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fywcq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_par1n"]
+albedo_color = Color(0.405768, 0.224927, 0.0277319, 1)
 emission_enabled = true
 emission = Color(5.77569e-07, 0.352603, 0.404572, 1)
 
@@ -32,6 +33,22 @@ albedo_color = Color(1, 0.409759, 0.813949, 1)
 albedo_color = Color(0, 0.694127, 0.817378, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_2bdgc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3l332"]
+albedo_color = Color(0.618266, 0.591885, 0.411751, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_cdeui"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4otkq"]
+albedo_color = Color(0.619608, 0.592157, 0.411765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_87chl"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cmnxs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trrdy"]
+albedo_color = Color(0, 0, 0, 1)
 
 [node name="Enemy" type="CharacterBody3D"]
 script = ExtResource("1_qdye5")
@@ -77,9 +94,29 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_u2ryj")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Body"]
-transform = Transform3D(0.0764301, 0.0441269, -1.12989e-09, 0, -3.8577e-09, -0.0516979, -0.0441269, 0.0764301, -1.95703e-09, 0.17965, -0.0116456, 0.546556)
+transform = Transform3D(0.0766118, 0.146694, -3.1185e-09, 0, -1.28244e-08, -0.142686, -0.0442318, 0.254081, -5.40141e-09, 0.17965, -0.0116456, 0.546556)
 mesh = SubResource("CylinderMesh_2bdgc")
 skeleton = NodePath("../..")
+
+[node name="Left arm" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(-1.31134e-08, -0.51, -7.10543e-15, 0.3, -2.22928e-08, 0, 0, -3.55271e-15, 0.3, 0.574421, 0, 5.02175e-08)
+material_override = SubResource("StandardMaterial3D_3l332")
+mesh = SubResource("CylinderMesh_cdeui")
+
+[node name="Right arm" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(-1.31134e-08, -0.51, -8.88178e-15, 0.3, -2.22928e-08, 0, 0, -3.55271e-15, 0.3, -0.574421, 0, -5.02175e-08)
+material_override = SubResource("StandardMaterial3D_4otkq")
+mesh = SubResource("CylinderMesh_cdeui")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.3, 0, -3.55271e-15, 0, 0.3, 0, 3.55271e-15, 0, 0.3, -1.14884, 0, -1.00435e-07)
+material_override = SubResource("StandardMaterial3D_87chl")
+mesh = SubResource("BoxMesh_cmnxs")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.3, 0, -3.55271e-15, 0, 0.3, 0, 3.55271e-15, 0, 0.3, 1.14884, 0, 1.00435e-07)
+material_override = SubResource("StandardMaterial3D_trrdy")
+mesh = SubResource("BoxMesh_cmnxs")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_height_offset = 0.15
