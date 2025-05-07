@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cawb6it45teve"
-path.s3tc="res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-fb82e76e3d094cbc5ab4c6ddb265e0f8.s3tc.ctex"
-path.etc2="res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-fb82e76e3d094cbc5ab4c6ddb265e0f8.etc2.ctex"
+path.s3tc="res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-1ade4e6555b4f7efde80afcb2c83b2e1.s3tc.ctex"
+path.etc2="res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-1ade4e6555b4f7efde80afcb2c83b2e1.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -15,8 +15,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Chromatic Artillery Shooter/ZombieAnimationglb_whiteclown_normal.png"
-dest_files=["res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-fb82e76e3d094cbc5ab4c6ddb265e0f8.s3tc.ctex", "res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-fb82e76e3d094cbc5ab4c6ddb265e0f8.etc2.ctex"]
+source_file="res://Chromatic Artillery Shooter/Animations/ZombieAnimationglb_whiteclown_normal.png"
+dest_files=["res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-1ade4e6555b4f7efde80afcb2c83b2e1.s3tc.ctex", "res://.godot/imported/ZombieAnimationglb_whiteclown_normal.png-1ade4e6555b4f7efde80afcb2c83b2e1.etc2.ctex"]
 
 [params]
 

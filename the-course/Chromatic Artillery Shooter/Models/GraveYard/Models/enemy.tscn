@@ -1,0 +1,73 @@
+[gd_scene load_steps=13 format=3 uid="uid://bsrmu47kqg1ug"]
+
+[ext_resource type="Script" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/enemy.gd" id="1_qdye5"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fywcq"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_lpsy6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nx0sl"]
+albedo_color = Color(0.377919, 0.377919, 0.377919, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_iwceh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hcm4"]
+albedo_color = Color(0.853854, 0.000238921, 0.763932, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fonx"]
+albedo_color = Color(0.854902, 0, 0.764706, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b33dy"]
+albedo_color = Color(1, 0.409759, 0.813949, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_85l5n"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_wb7uc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2ryj"]
+albedo_color = Color(0, 0.694127, 0.817378, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2bdgc"]
+
+[node name="Enemy" type="CharacterBody3D"]
+script = ExtResource("1_qdye5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.765925, 0, 0, 0, 0.765925, 0, 0, 0, 0.765925, 0, 0.558898, 0)
+shape = SubResource("CapsuleShape3D_fywcq")
+
+[node name="Body" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.696353, 0, 0, 0, 0.696353, 0, 0, 0, 0.696353, 0, 0.540792, 0)
+mesh = SubResource("CapsuleMesh_lpsy6")
+surface_material_override/0 = SubResource("StandardMaterial3D_nx0sl")
+
+[node name="Left Eye" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.199276, 0, 0, 0, 0.199276, 0, 0, 0, 0.199276, -0.208664, 0.485221, 0.450166)
+mesh = SubResource("SphereMesh_iwceh")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5hcm4")
+
+[node name="Right Eye" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.199276, 0, 0, 0, 0.199276, 0, 0, 0, 0.199276, 0.258789, 0.485221, 0.450166)
+mesh = SubResource("SphereMesh_iwceh")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_4fonx")
+
+[node name="Nose" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(5.05383e-16, 1.15618e-08, 0.266982, 0.264504, -1.15618e-08, 0, 1.15618e-08, 0.264504, -1.16702e-08, 0.0179147, 0.216602, 0.473029)
+material_override = SubResource("StandardMaterial3D_b33dy")
+mesh = SubResource("CylinderMesh_85l5n")
+skeleton = NodePath("../..")
+
+[node name="Hat" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.657243, 0, 0, 0, 1.51166, 0, 0, 0, 0.657243, 0, 0.967195, 0)
+mesh = SubResource("PrismMesh_wb7uc")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_u2ryj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.0764301, 0.0441269, -1.12989e-09, 0, -3.8577e-09, -0.0516979, -0.0441269, 0.0764301, -1.95703e-09, 0.17965, -0.0116456, 0.546556)
+mesh = SubResource("CylinderMesh_2bdgc")
+skeleton = NodePath("../..")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
