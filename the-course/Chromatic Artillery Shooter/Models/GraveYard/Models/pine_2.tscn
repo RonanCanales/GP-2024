@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cplnx2jh26tnj"]
+
+[ext_resource type="PackedScene" uid="uid://c5mofqqbmki66" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pine.glb" id="1_e71f8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tm2do"]
+
+[node name="pine2" instance=ExtResource("1_e71f8")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pine" index="0"]
+transform = Transform3D(1.16613, 0, 0, 0, 1.16613, 0, 0, 0, 1.16613, 0, 0.814283, 0)
+shape = SubResource("CapsuleShape3D_tm2do")

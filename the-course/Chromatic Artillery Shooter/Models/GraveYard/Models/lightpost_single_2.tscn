@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://djkmoo45llkjg"]
+
+[ext_resource type="PackedScene" uid="uid://7e2d1h5121fc" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/lightpost-single.glb" id="1_amm36"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rl8fs"]
+points = PackedVector3Array(0.0726233, 0.995221, 0.311267, -0.0732886, 0.995221, 0.311267, 0.0726233, 0.958562, 0.311267, 0.0726233, 0.995221, 0.165339, 0.0686528, 1.20253, 0.307268, -0.0732886, 0.995221, 0.165339, -0.0732886, 0.958562, 0.311267, -0.0693323, 1.20253, 0.307268, 0.0726233, 0.958562, 0.165339, 0.0646679, 0, 0.0646655, 0.0704952, 0.0469858, 0.0704951, 0.0704952, 0.0469858, -0.0705, 0.0686528, 1.20253, 0.1693, 0.0306751, 1.30089, 0.26448, -0.0705035, 0.0469858, -0.0705, -0.0732886, 0.958562, 0.165339, -0.0693323, 1.20253, 0.1693, -0.0705035, 0.0469858, 0.0704951, -0.0646762, 0, 0.0646655, -0.0313547, 1.30089, 0.26448, 0.0646679, 0, -0.0647077, 0.0309464, 1.2286, -0.0309631, 0.0221055, 1.31857, -0.0221439, 0.0306751, 1.30089, 0.212088, 0.0221055, 1.31857, 0.0221016, -0.0646762, 0, -0.0647077, -0.030969, 1.2286, -0.0309631, -0.0313547, 1.30089, 0.212088, -0.022128, 1.31857, -0.0221439, -0.022128, 1.31857, 0.0221016)
+
+[node name="lightpost-single2" instance=ExtResource("1_amm36")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="lightpost-single" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lightpost-single/StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_rl8fs")

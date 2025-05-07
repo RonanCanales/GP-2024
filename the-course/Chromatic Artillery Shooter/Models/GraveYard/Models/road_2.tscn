@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c0llkpvsm1di4" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/road.glb" id="1_qnwf7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jd0m1"]
-albedo_color = Color(0.259294, 0.259294, 0.259294, 1)
+albedo_color = Color(0.976894, 0.476169, 1, 1)
 
 [node name="road2" instance=ExtResource("1_qnwf7")]
 

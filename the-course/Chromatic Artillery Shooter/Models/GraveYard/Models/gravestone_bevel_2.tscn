@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ylh0v88cb772"]
+
+[ext_resource type="PackedScene" uid="uid://ei1aluesuau6" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/gravestone-bevel.glb" id="1_jmuv4"]
+
+[node name="gravestone-bevel2" instance=ExtResource("1_jmuv4")]
