@@ -12,3 +12,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	position += transform.basis * Vector3(0, 0, -SPEED) * delta
+	ray.force_raycast_update()
+	if ray.is_colliding():
+		var hit = ray.get_collider()
+		if hit and hit.has_method("take_damage"):
+			hit.take_damage(1)
