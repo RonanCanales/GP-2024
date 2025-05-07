@@ -14,6 +14,7 @@ var gravity = 9.8
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
+@onready var damage_flash = $CanvasLayer/Damage
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -67,3 +68,11 @@ func _headbob(time) -> Vector3:
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	pos.x = cos(time * BOB_FREQ) * BOB_AMP
 	return pos
+
+func take_damage():
+	damage_flash.visible = true
+	damage_flash.modulate.a = 0.5
+	get_tree().create_timer(0.1).timeout.connect(_hide_flash)
+
+func _hide_flash():
+	damage_flash.visible = false

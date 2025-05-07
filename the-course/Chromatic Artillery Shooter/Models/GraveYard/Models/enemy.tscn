@@ -32,12 +32,18 @@ albedo_color = Color(0, 0.694127, 0.817378, 1)
 [node name="Enemy" type="CharacterBody3D"]
 script = ExtResource("1_qdye5")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(0.765925, 0, 0, 0, 0.765925, 0, 0, 0, 0.765925, 0, 0.558898, 0)
 shape = SubResource("CapsuleShape3D_fywcq")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(0.229777, 0, 0, 0, -1.00439e-08, -0.229777, 0, 0.229777, -1.00439e-08, 0, 0.698542, -0.357745)
+shape = SubResource("CapsuleShape3D_fywcq")
+
 [node name="Body" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.696353, 0, 0, 0, 0.696353, 0, 0, 0, 0.696353, 0, 0.540792, 0)
+transform = Transform3D(-0.696353, 0, -6.08771e-08, 0, 0.696353, 0, 6.08771e-08, 0, -0.696353, 0, 0.540792, 0)
 mesh = SubResource("CapsuleMesh_lpsy6")
 surface_material_override/0 = SubResource("StandardMaterial3D_nx0sl")
 
@@ -71,3 +77,10 @@ mesh = SubResource("CylinderMesh_2bdgc")
 skeleton = NodePath("../..")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = 0.15
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.765925, 0, 0, 0, 0.765925, 0, 0, 0, 0.765925, 0, 0.558898, 0)
+shape = SubResource("CapsuleShape3D_fywcq")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
