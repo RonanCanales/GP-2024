@@ -12,10 +12,14 @@ var t_bob = 0.0
 
 var gravity = 9.8
 
+var bullet = load("res://Chromatic Artillery Shooter/Models/GraveYard/Models/bullet.tscn")
+var instance
+
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var damage_flash = $CanvasLayer/Damage
 @onready var gun_anim = $"Head/Camera3D/Water gun (1)/AnimationPlayer"
+@onready var gun_barrel = $"Head/Camera3D/Water gun (1)/RayCast3D"
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -64,6 +68,11 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shoot"):
 		if !gun_anim.is_playing():
 			gun_anim.play("Shoot")
+			instance = bullet.instantiate()
+			instance.position = gun_barrel.global_position
+			instance.transform.basis = gun_barrel.global_transform.basis
+			instance.scale = Vector3(0.003, 0.003, 0.003)
+			get_parent().add_child(instance)
 
 	move_and_slide()
 

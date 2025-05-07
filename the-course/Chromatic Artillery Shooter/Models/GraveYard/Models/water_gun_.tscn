@@ -32,7 +32,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.01, 0.1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0.05, 0, 0), Vector3(0, 0, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.05), Vector3(0, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_i3odt"]
@@ -59,6 +59,7 @@ _data = {
 [node name="Water gun (1)" instance=ExtResource("1_lc3iy")]
 
 [node name="Node" parent="." index="0"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_d1oel")
 surface_material_override/1 = SubResource("StandardMaterial3D_ikjfu")
 surface_material_override/2 = SubResource("StandardMaterial3D_bs86v")
@@ -67,3 +68,7 @@ surface_material_override/2 = SubResource("StandardMaterial3D_bs86v")
 libraries = {
 "": SubResource("AnimationLibrary_2yidi")
 }
+
+[node name="RayCast3D" type="RayCast3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00735499, 0, -0.321522)
+target_position = Vector3(0, 0, -1)

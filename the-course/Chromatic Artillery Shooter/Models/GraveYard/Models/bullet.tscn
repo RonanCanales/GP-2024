@@ -10,13 +10,13 @@ emission = Color(0.741176, 0, 0, 1)
 emission_energy_multiplier = 5.0
 
 [node name="Bullet" type="Node3D"]
+transform = Transform3D(9.99999e-05, 0, 0, 0, 9.99999e-05, 0, 0, 0, 9.99999e-05, 0, 18, 0)
 script = ExtResource("1_n2yi0")
 
 [node name="Heart" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.084, 0, 0, 0, 0.084, 0, 0, 0, 0.084, -0.198, 37, -0.936365)
 mesh = ExtResource("2_gipsq")
 surface_material_override/0 = SubResource("StandardMaterial3D_pf08b")
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 36, -3.8)
-target_position = Vector3(0, 0, 7.345)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10, -5.1)
+target_position = Vector3(0, 0, 100)
