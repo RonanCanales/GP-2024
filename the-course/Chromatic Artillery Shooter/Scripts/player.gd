@@ -20,6 +20,7 @@ var instance
 @onready var damage_flash = $CanvasLayer/Damage
 @onready var gun_anim = $"Head/Camera3D/Water gun (1)/AnimationPlayer"
 @onready var gun_barrel = $"Head/Camera3D/Water gun (1)/RayCast3D"
+@onready var gun_shot_sound = $"Head/Camera3D/Water gun (1)/GunShotSound"
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -68,6 +69,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shoot"):
 		if !gun_anim.is_playing():
 			gun_anim.play("Shoot")
+			gun_shot_sound.play()
 			instance = bullet.instantiate()
 			instance.position = gun_barrel.global_position
 			instance.transform.basis = gun_barrel.global_transform.basis

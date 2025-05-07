@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://7aaykysf7bha"]
+[gd_scene load_steps=37 format=4 uid="uid://7aaykysf7bha"]
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
@@ -23,6 +23,7 @@
 [ext_resource type="Shader" path="res://addons/simplegrasstextured/shaders/grass.gdshader" id="18_c1rds"]
 [ext_resource type="Texture2D" uid="uid://c4ggdp0kg5wjk" path="res://addons/simplegrasstextured/textures/grassbushcc008.png" id="19_kh5br"]
 [ext_resource type="Script" path="res://addons/simplegrasstextured/grass.gd" id="20_1kb0i"]
+[ext_resource type="AudioStream" uid="uid://cjsqssbc8om02" path="res://Chromatic Artillery Shooter/Audio/dreaming-of-reggae-217732.mp3" id="24_mrf8t"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uqwba"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -2310,5 +2311,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.2346, 0.503042, -7.31348)
 [node name="EnemySpawnTimer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7136, 6.28703, 2.90621)
+stream = ExtResource("24_mrf8t")
+volume_db = -12.381
+autoplay = true
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]

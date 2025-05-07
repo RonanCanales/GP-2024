@@ -2,12 +2,14 @@ extends Node3D
 
 @onready var spawns = $Spawns
 @onready var navigation_region = $NavigationRegion3D
+@onready var music = $AudioStreamPlayer3D
 
 var enemy = load("res://Chromatic Artillery Shooter/Models/GraveYard/Models/enemy.tscn")
 var instance
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	music.play()
 	randomize()
 
 
