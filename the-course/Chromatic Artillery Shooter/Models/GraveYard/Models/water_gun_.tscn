@@ -76,4 +76,4 @@ target_position = Vector3(0, 0, -1)
 
 [node name="GunShotSound" type="AudioStreamPlayer3D" parent="." index="3"]
 stream = ExtResource("2_ykhtc")
-volume_db = -20.0
+volume_db = -24.697
