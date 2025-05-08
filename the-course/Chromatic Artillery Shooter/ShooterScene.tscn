@@ -1,9 +1,10 @@
-[gd_scene load_steps=37 format=4 uid="uid://7aaykysf7bha"]
+[gd_scene load_steps=39 format=4 uid="uid://7aaykysf7bha"]
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/World.gd" id="1_quc7d"]
 [ext_resource type="PackedScene" uid="uid://dv47hml1ksr85" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/water_gun_.tscn" id="3_vvyyx"]
+[ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/score_tracker.gd" id="4_pcncp"]
 [ext_resource type="PackedScene" uid="uid://cvdmqqllp3hor" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/road_2.tscn" id="4_qe8dd"]
 [ext_resource type="PackedScene" uid="uid://c5mofqqbmki66" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pine.glb" id="5_01tt5"]
 [ext_resource type="PackedScene" uid="uid://kp4oiyeb8bse" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/brick_wall_end_2.tscn" id="5_2uk5i"]
@@ -112,6 +113,24 @@ uv1_triplanar = true
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ooqnc"]
 
+[sub_resource type="GDScript" id="GDScript_fjys8"]
+script/source = "extends Node3D
+
+var love_felt = 0 
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func add_love(amount: int):
+	love_felt += amount
+"
+
 [node name="World" type="Node3D"]
 script = ExtResource("1_quc7d")
 
@@ -143,16 +162,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.49375, 0)
 transform = Transform3D(1.64958, 0, 0, 0, 1.64958, 0, 0, 0, 1.64958, -0.297899, -0.42517, -0.843554)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Player"]
-visible = false
+script = ExtResource("4_pcncp")
 
-[node name="Damage" type="ColorRect" parent="Player/CanvasLayer"]
-visible = false
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.968627, 0, 0.454902, 0.956863)
+[node name="ScoreTracker" type="Label" parent="Player/CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 75.0
+text = "Love Sent:"
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="."]
 transform = Transform3D(7.43606, 0, 0, 0, 7.43606, 0, 0, 0, 7.43606, 152.378, 139.28, -109.993)
@@ -2317,5 +2332,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7136, 6.28703, 2.90621)
 stream = ExtResource("24_mrf8t")
 volume_db = -12.381
 autoplay = true
+
+[node name="GameManager" type="Node3D" parent="."]
+script = SubResource("GDScript_fjys8")
 
 [connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]

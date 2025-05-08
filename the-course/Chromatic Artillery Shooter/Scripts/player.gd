@@ -17,7 +17,6 @@ var instance
 
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
-@onready var damage_flash = $CanvasLayer/Damage
 @onready var gun_anim = $"Head/Camera3D/Water gun (1)/AnimationPlayer"
 @onready var gun_barrel = $"Head/Camera3D/Water gun (1)/RayCast3D"
 @onready var gun_shot_sound = $"Head/Camera3D/Water gun (1)/GunShotSound"
@@ -83,11 +82,3 @@ func _headbob(time) -> Vector3:
 	pos.y = sin(time * BOB_FREQ) * BOB_AMP
 	pos.x = cos(time * BOB_FREQ) * BOB_AMP
 	return pos
-
-func take_damage():
-	damage_flash.visible = true
-	damage_flash.modulate.a = 0.5
-	get_tree().create_timer(0.1).timeout.connect(_hide_flash)
-
-func _hide_flash():
-	damage_flash.visible = false

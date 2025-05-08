@@ -29,15 +29,13 @@ func _physics_process(delta):
 	move_and_slide() 
 
 
-func _on_area_3d_body_entered(body: Node3D) -> void:
-	if body.name == "Player":
-		body.take_damage()  
-
 func take_damage(amount: int = 1):
 	health -= amount
 	if health <= 0:
 		queue_free()
+		return
 	_damage_flash()
+	ScoreManager.add_love(10)
 
 func _damage_flash() -> void:
 	
