@@ -2309,7 +2309,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9255, 0.503042, -7.31348)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.2346, 0.503042, -7.31348)
 
 [node name="EnemySpawnTimer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 0.555
 autostart = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
