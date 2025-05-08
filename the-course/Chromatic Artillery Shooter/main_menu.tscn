@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c7oopblh66beo"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_jic3q"]
-[ext_resource type="Texture2D" uid="uid://ban07qua8lv38" path="res://Chromatic Artillery Shooter/Images/8d33f3f48c1ecd1934a9f0d0f522fc2b.jpg" id="2_optnq"]
+[ext_resource type="Texture2D" uid="uid://fugggvfcaqdh" path="res://Chromatic Artillery Shooter/Images/IMG-20250508-WA0000.jpg" id="2_b0f7w"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2g2r"]
 bg_color = Color(1, 0.271227, 0.597335, 1)
@@ -20,14 +20,22 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_optnq")
+texture = ExtResource("2_b0f7w")
+expand_mode = 2
 
 [node name="Start" type="Button" parent="."]
 z_index = 1
-offset_left = 367.0
-offset_top = 503.0
-offset_right = 538.0
-offset_bottom = 586.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.0
+offset_top = 117.0
+offset_right = 82.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/hover = SubResource("StyleBoxFlat_l2g2r")
 theme_override_styles/normal = SubResource("StyleBoxFlat_l0hro")
 text = "START"
@@ -40,24 +48,5 @@ offset_right = 404.43
 offset_bottom = 524.79
 scale = Vector2(3.72, 3.72)
 theme_override_styles/panel = SubResource("StyleBoxFlat_om42u")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 56.0
-offset_top = -257.0
-offset_right = 681.66
-offset_bottom = -182.0
-grow_vertical = 2
-scale = Vector2(1.52, 1.52)
-
-[node name="Label" type="Label" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.784289, 0, 0.228915, 1)
-theme_override_colors/font_shadow_color = Color(1, 0.705749, 0.388559, 1)
-theme_override_colors/font_outline_color = Color(2.11775e-06, 0.48656, 0.638928, 1)
-theme_override_font_sizes/font_size = 61
-text = "Make LOVE not War"
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
