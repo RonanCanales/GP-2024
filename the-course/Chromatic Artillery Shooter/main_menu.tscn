@@ -24,9 +24,9 @@ texture = ExtResource("2_optnq")
 
 [node name="Start" type="Button" parent="."]
 z_index = 1
-offset_left = 364.0
+offset_left = 367.0
 offset_top = 503.0
-offset_right = 535.0
+offset_right = 538.0
 offset_bottom = 586.0
 theme_override_styles/hover = SubResource("StyleBoxFlat_l2g2r")
 theme_override_styles/normal = SubResource("StyleBoxFlat_l0hro")
