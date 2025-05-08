@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://tkmexoc6ess8" path="res://Chromatic Artillery Shooter/Textures/earth-texture/696.jpg" id="1_1amjg"]
 [ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/player.gd" id="1_75jxw"]
-[ext_resource type="Script" path="res://Chromatic Artillery Shooter/World.gd" id="1_quc7d"]
+[ext_resource type="Script" path="res://Chromatic Artillery Shooter/Scripts/World.gd" id="1_quc7d"]
 [ext_resource type="PackedScene" uid="uid://dv47hml1ksr85" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/water_gun_.tscn" id="3_vvyyx"]
 [ext_resource type="PackedScene" uid="uid://cvdmqqllp3hor" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/road_2.tscn" id="4_qe8dd"]
 [ext_resource type="PackedScene" uid="uid://c5mofqqbmki66" path="res://Chromatic Artillery Shooter/Models/GraveYard/Models/GLB format/pine.glb" id="5_01tt5"]

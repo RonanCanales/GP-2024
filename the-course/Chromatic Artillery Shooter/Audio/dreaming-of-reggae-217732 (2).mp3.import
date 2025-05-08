@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buu0a3hq4tral"
+path="res://.godot/imported/dreaming-of-reggae-217732 (2).mp3-84275f8a6c9210d773a1d1141239baf2.mp3str"
+
+[deps]
+
+source_file="res://Chromatic Artillery Shooter/Audio/dreaming-of-reggae-217732 (2).mp3"
+dest_files=["res://.godot/imported/dreaming-of-reggae-217732 (2).mp3-84275f8a6c9210d773a1d1141239baf2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
